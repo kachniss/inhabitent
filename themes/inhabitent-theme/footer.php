@@ -11,7 +11,13 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<div class="contact-info">
+					</div>
+					<div class="business-hours">
+					</div>
+					<div class="footer-logo">
+					</div>
+					<div class="copyright">Copyright &copy; 2017 Inhabitent</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

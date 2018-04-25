@@ -15,9 +15,14 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #248A83;
+$color__link-visited: #248A83;
+$color__link-hover: #2f1339;
+
+$color__background-header: rgba(255, 255, 255, 0.5);
+$color__border-header: lighten(#a1a1a1, 15%);
+
+$color__text-footer: #fff;
 
 // Typography
 

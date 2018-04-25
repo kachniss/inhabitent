@@ -29,8 +29,10 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	// float: right;
+	// width: 70%;
+	// background: $color__background-nav;
+	// display: inline-block;
 
 	ul {
 		display: none;
@@ -77,8 +79,10 @@ a {
 		}
 	}
 	li {
-		float: left;
+		float: right;
 		position: relative;
+		text-transform: uppercase;
+		padding: 0 $base__space-unit/2;
 
 		&:hover > a,
 		&.focus > a {
@@ -94,6 +98,8 @@ a {
 	.current_page_ancestor > a {
 	}
 }
+
+
 
 /* Small menu. */
 .menu-toggle,

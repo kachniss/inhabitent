@@ -416,11 +416,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -429,9 +429,7 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: block; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -457,8 +455,10 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    float: right;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0 0.75rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -666,3 +666,84 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-content {
+  padding-top: 50px; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  min-width: 1120px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #c7c7c7; }
+
+/* Logo */
+.site-branding {
+  width: 50px;
+  height: 50px;
+  display: inline-block; }
+  .site-branding .site-logo {
+    background: url(../../assets/images/logos/inhabitent-logo-tent.svg) center/50px no-repeat;
+    width: 50px;
+    height: 50px; }
+    .site-branding .site-logo a {
+      display: block;
+      width: 50px;
+      height: 50px; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  width: 100%;
+  height: 350px;
+  background: url(../../assets/images/dark-wood.png);
+  position: absolute;
+  bottom: 0; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 3rem; }
+    .site-footer .site-info .contact-info {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
+    .site-footer .site-info .business-hours {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
+    .site-footer .site-info .footer-logo {
+      width: 300px;
+      height: 60px;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      background-image: url(../../assets/images/logos/inhabitent-logo-text.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .site-footer .site-info .copyright {
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      bottom: 3rem;
+      width: 100%;
+      text-align: center; }
