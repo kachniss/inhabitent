@@ -6,42 +6,48 @@
     width: 100%;
     height: 350px;
     background: url(../../assets/images/dark-wood.png);
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
 
     .site-info {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // width: 70%;
+        margin: auto;
+        justify-content: center;
         align-items: flex-start;
-        padding: $base__space-unit * 2;
+        padding: $base__space-unit * 2 $base__space-unit $base__space-unit $base__space-unit;
+        height: 100%;
+
+        h3 {
+            color: $color__heading-footer;
+            text-transform: uppercase;
+        }
     
         .contact-info {
-            flex-basis: 25%;
+            flex: 0 0 230px;
+            // flex-basis: 30%;
         }
     
         .business-hours {
-            flex-basis: 25%;
+            flex: 0 0 230px;
         }
     
         .footer-logo {
-            width: 300px;
-            height: 60px;
-            flex-basis: 50%;
-            background-image: url(../../assets/images/logos/inhabitent-logo-text.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
+            flex: 0 0 230px;
+            // margin-left: 80px;
+
+            img {
+                content: url(../../assets/images/logos/inhabitent-logo-text.svg);
+                max-height: 50px;    
+            }   
         }
     
         .copyright {
             text-transform: uppercase;
             color: $color__text-footer;
-            position: absolute;
-            bottom: $base__space-unit * 2;
             width: 100%;
             text-align: center;
+            align-self: flex-end;
         }
     }
     

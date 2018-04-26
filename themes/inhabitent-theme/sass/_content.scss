@@ -47,3 +47,11 @@
 .bypostauthor {
 	display: block;
 }
+
+/* Page layout */
+
+.site {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}

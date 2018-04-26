@@ -15,6 +15,11 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	font-family: Merriweather, serif;
+}
+
+h1, h2, h3 {
+	font-family: Novecento, sans-serif;
 }
 
 blockquote, q {

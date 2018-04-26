@@ -225,6 +225,27 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "Merriweather";
+  src: url("../../assets/fonts/Merriweather/Merriweather-Light.eot");
+  src: url("../../assets/fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../../assets/fonts/Merriweather/Merriweather-Light.svg#merriweather") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Novecento";
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot");
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.woff") format("woff"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.svg#merriweather") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Novecento";
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.eot");
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff") format("woff"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.svg#merriweather") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -301,7 +322,11 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-family: Merriweather, serif; }
+
+h1, h2, h3 {
+  font-family: Novecento, sans-serif; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -602,6 +627,15 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Page layout */
+.site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100vh; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -710,40 +744,45 @@ object {
   width: 100%;
   height: 350px;
   background: url(../../assets/images/dark-wood.png);
-  position: absolute;
-  bottom: 0; }
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 3rem; }
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    height: 100%; }
+    .site-footer .site-info h3 {
+      color: #d99054;
+      text-transform: uppercase; }
     .site-footer .site-info .contact-info {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 230px;
+              flex: 0 0 230px; }
     .site-footer .site-info .business-hours {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 230px;
+              flex: 0 0 230px; }
     .site-footer .site-info .footer-logo {
-      width: 300px;
-      height: 60px;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      background-image: url(../../assets/images/logos/inhabitent-logo-text.svg);
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat; }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 230px;
+              flex: 0 0 230px; }
+      .site-footer .site-info .footer-logo img {
+        content: url(../../assets/images/logos/inhabitent-logo-text.svg);
+        max-height: 50px; }
     .site-footer .site-info .copyright {
       text-transform: uppercase;
       color: #fff;
-      position: absolute;
-      bottom: 3rem;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
