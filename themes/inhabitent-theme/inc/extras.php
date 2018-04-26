@@ -20,3 +20,28 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+/**
+ * change admin login logo (image, link, title)
+ *  source https://codex.wordpress.org/Customizing_the_Login_Form 04/25/2018
+ */
+function change_login_logo() { 
+	?> 
+	<style type="text/css"> 
+	body.login div#login h1 a {
+	background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent.svg); 
+	margin-top: 30px; 
+	} 
+	</style>
+	<?php 
+	} add_action( 'login_enqueue_scripts', 'change_login_logo' );
+
+	function change_login_logo_url() {
+		return home_url();
+	}
+	add_filter( 'login_headerurl', 'change_login_logo_url' );
+
+	function change_login_logo_url_title() {
+		return get_bloginfo();
+	}
+	add_filter( 'login_headertitle', 'change_login_logo_url_title' );

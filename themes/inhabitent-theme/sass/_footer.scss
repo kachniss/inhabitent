@@ -11,21 +11,22 @@
     .site-info {
         display: flex;
         flex-wrap: wrap;
-        // width: 70%;
         margin: auto;
-        justify-content: center;
+        justify-content: space-around;
         align-items: flex-start;
         padding: $base__space-unit * 2 $base__space-unit $base__space-unit $base__space-unit;
         height: 100%;
+        width: 1120px;
+        margin: auto;
+        color: $color__text-footer;
 
         h3 {
             color: $color__heading-footer;
-            text-transform: uppercase;
+            letter-spacing: .1rem;
         }
     
         .contact-info {
             flex: 0 0 230px;
-            // flex-basis: 30%;
         }
     
         .business-hours {
@@ -43,12 +44,25 @@
         }
     
         .copyright {
-            text-transform: uppercase;
-            color: $color__text-footer;
+            font-family: Novecento, sans-serif;
             width: 100%;
             text-align: center;
             align-self: flex-end;
         }
     }
     
+    
+    .fas, .fab {
+        display: inline-block;
+        margin-right: $base__space-unit / 3;
+    }
+
+    a, a:hover, a:visited, a:active, a:focus {
+        color: $color__text-footer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

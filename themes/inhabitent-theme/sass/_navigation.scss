@@ -29,10 +29,6 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
-	// float: right;
-	// width: 70%;
-	// background: $color__background-nav;
-	// display: inline-block;
 
 	ul {
 		display: none;
@@ -79,8 +75,7 @@ a {
 		}
 	}
 	li {
-		float: right;
-		position: relative;
+		font-family: Novecento, sans-serif;
 		text-transform: uppercase;
 		padding: 0 $base__space-unit/2;
 
