@@ -15,7 +15,7 @@
 						<h3>Contact Info</h3>
 						<p>
 							<i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
-							<a href="mailto:info@inhabitent.com<">info@inhabitent.com</a>
+							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<p><i class="fas fa-phone"></i>778-456-7891</p>
 						<p>
@@ -26,9 +26,9 @@
 					</div>
 					<div class="business-hours">
 						<h3>Business Hours</h3>
-						<p>Monday-Friday: 9am to 5pm</p>
-						<p>Saturday: 10am to 2pm</p>
-						<p>Sunday: Closed</p>
+						<p><span class="footer-bold">Monday-Friday:</span> 9am to 5pm</p>
+						<p><span class="footer-bold">Saturday:</span> 10am to 2pm</p>
+						<p><span class="footer-bold">Sunday:</span> Closed</p>
 					</div>
 					<div class="footer-logo">
 						<a href="/inhabitent" rel="home">

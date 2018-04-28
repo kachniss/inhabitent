@@ -14,6 +14,17 @@
 }
 
 @font-face {
+    font-family: "Merriweather";
+    src: url("../../assets/fonts/Merriweather/Merriweather-Bold.eot");
+    src: url("../../assets/fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff"),
+        url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"),
+        url("../../assets/fonts/Merriweather/Merriweather-Bold.svg#merriweather") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Novecento";
     src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot");
     src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"),

@@ -233,6 +233,13 @@ th {
   font-style: normal; }
 
 @font-face {
+  font-family: "Merriweather";
+  src: url("../../assets/fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("../../assets/fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../../assets/fonts/Merriweather/Merriweather-Bold.svg#merriweather") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
   font-family: "Novecento";
   src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot");
   src: url("../../assets/fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.woff") format("woff"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../assets/fonts/Novecento/Novecentosanswide-Normal.svg#merriweather") format("svg");
@@ -703,7 +710,40 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-content {
-  padding-top: 50px; }
+  margin-top: 50px; }
+
+.hero-image {
+  margin-top: -50px;
+  height: 100vh;
+  min-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  z-index: -1;
+  /**
+    * source https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images 04/28/2018
+    */ }
+  .hero-image .wp-post-image {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%; }
+  .hero-image::after {
+    display: block;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))) no-repeat center/100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) no-repeat center/100%;
+    height: 100vh;
+    min-width: 1120px;
+    width: 100vw;
+    content: ''; }
 
 /*--------------------------------------------------------------
 # Header
@@ -723,7 +763,8 @@ object {
   min-width: 1120px;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid #c7c7c7; }
+  border-bottom: 1px solid #c7c7c7;
+  z-index: 100; }
 
 /* Logo */
 .site-branding {
@@ -755,8 +796,9 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -768,27 +810,31 @@ object {
     .site-footer .site-info h3 {
       color: #d99054;
       letter-spacing: .1rem; }
+    .site-footer .site-info .footer-bold {
+      font-weight: bold; }
     .site-footer .site-info .contact-info {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 230px;
-              flex: 0 0 230px; }
+          -ms-flex: 0 0 250px;
+              flex: 0 0 250px; }
     .site-footer .site-info .business-hours {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 230px;
-              flex: 0 0 230px; }
+          -ms-flex: 0 0 250px;
+              flex: 0 0 250px; }
     .site-footer .site-info .footer-logo {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 230px;
-              flex: 0 0 230px; }
+          -ms-flex: 0 0 250px;
+              flex: 0 0 250px; }
       .site-footer .site-info .footer-logo img {
         content: url(../../assets/images/logos/inhabitent-logo-text.svg);
         max-height: 50px; }
     .site-footer .site-info .copyright {
       font-family: Novecento, sans-serif;
-      width: 100%;
       text-align: center;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
       -ms-flex-item-align: end;
-          align-self: flex-end; }
+          align-self: flex-end;
+      padding-top: 2.25rem; }
   .site-footer .fas, .site-footer .fab {
     display: inline-block;
     margin-right: 0.5rem; }
