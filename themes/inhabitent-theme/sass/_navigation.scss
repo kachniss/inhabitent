@@ -77,7 +77,7 @@ a {
 	li {
 		float: left;
 		position: relative;
-		font-family: Novecento, sans-serif;
+		font-family: $font__family-heading;
 		text-transform: uppercase;
 		padding: 0 $base__space-unit/2;
 

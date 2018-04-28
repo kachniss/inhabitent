@@ -17,7 +17,10 @@
 							<i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
-						<p><i class="fas fa-phone"></i>778-456-7891</p>
+						<p>
+							<i class="fas fa-phone"  aria-hidden="true"></i>
+							<a href="tel:7784567891">778-456-7891</a>
+						</p>
 						<p>
 							<i class="fab fa-facebook-square fa-lg"></i>
 							<i class="fab fa-twitter-square fa-lg"></i>

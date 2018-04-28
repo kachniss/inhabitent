@@ -15,3 +15,39 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+.widget {
+	margin: $base__space-unit * 2;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.textwidget {
+	span {
+		display: inline-block;
+	}
+	a {
+		text-decoration: none;
+	}
+	
+
+	i {
+		margin-right: $base__space-unit/2;
+		display: inline-block;
+	}
+
+	.map-icon {
+		display: flex;
+
+		i {
+			align-self: flex-start;
+		}
+	}
+}

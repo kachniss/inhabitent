@@ -15,16 +15,20 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-	font-family: Merriweather, serif;
+	font-family: $font__family-default;
 }
 
 h1, h2, h3 {
-	font-family: Novecento, sans-serif;
+	font-family: $font__family-heading;
 	text-transform: uppercase;
 }
 
 h1 {
 	font-size: $font__h1-size;
+}
+
+h2 {
+	font-size: $font__h2-size;
 }
 
 blockquote, q {

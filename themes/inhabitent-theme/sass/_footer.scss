@@ -19,7 +19,7 @@
         height: 100%;
         width: 1120px;
         margin: auto;
-        color: $color__text-footer;
+        color: $color__text-light;
 
         h3 {
             color: $color__heading-footer;
@@ -49,8 +49,7 @@
         }
     
         .copyright {
-            font-family: Novecento, sans-serif;
-            // width: 100%;
+            font-family: $font__family-heading;
             text-align: center;
             flex-basis: 100%;
             align-self: flex-end;
@@ -65,7 +64,7 @@
     }
 
     a, a:hover, a:visited, a:active, a:focus {
-        color: $color__text-footer;
+        color: $color__text-light;
         text-decoration: none;
 
         &:hover {

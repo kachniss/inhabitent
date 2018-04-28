@@ -5,6 +5,14 @@ $site__width: 1120px;
 
 // Colors
 
+// brand colors
+$green-brand: #248A83;
+$purple-brand: #2f1339;
+$orange-brand: #d99054;
+$yellow-brand: #f0e4d1;
+$light-grey-brand: #a1a1a1;
+$medium-grey-brand: #808080;
+
 $color__background-body: #fff;
 $color__text-main: #404040;
 $color__text-light: #fff;
@@ -17,15 +25,16 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: #248A83;
-$color__link-visited: #248A83;
-$color__link-hover: #2f1339;
+$color__link: $green-brand;
+$color__link-visited: $green-brand;
+$color__link-hover: $purple-brand;
 
-$color__background-header: rgba(255, 255, 255, 0.5);
-$color__border-header: lighten(#a1a1a1, 15%);
+$color__background-header: rgba(255, 255, 255, 0.8);
 
-$color__text-footer: #fff;
-$color__heading-footer: #d99054;
+$border__solid: 1px solid #e1e1e1;
+$border__dashed: 1px dashed #c8c8c8;
+
+$color__heading-footer: $orange-brand;
 
 // Typography
 
@@ -35,5 +44,8 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
 
-$font__h1-size: 3rem;
+$font__h1-size: 2.5rem;
 $font__h2-size: 2rem;
+
+$font__family-heading: Novecento, sans-serif;
+$font__family-default: Merriweather, serif;

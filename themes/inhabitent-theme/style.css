@@ -337,7 +337,10 @@ h1, h2, h3 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -388,35 +391,28 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #e1e1e1;
+  background: #248A83;
+  color: #fff;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
   padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  line-height: 1.75;
+  padding: 0.75rem 1.5rem; }
+  button:hover, button:active, button:focus,
   input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
+  input[type="reset"]:hover,
   input[type="reset"]:active,
   input[type="reset"]:focus,
+  input[type="submit"]:hover,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    background: #144d49; }
 
 /* Fields */
 input[type="text"],
@@ -425,9 +421,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #e1e1e1;
+  font-family: Merriweather, serif;
+  background: #eeeeee;
+  outline: 0; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -445,7 +442,14 @@ input[type="search"] {
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 80%; }
+
+label {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase; }
+
+.req {
+  color: red; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -601,6 +605,33 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget {
+  margin: 3rem; }
+  .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .widget ul a {
+      text-decoration: none; }
+
+.textwidget span {
+  display: inline-block; }
+
+.textwidget a {
+  text-decoration: none; }
+
+.textwidget i {
+  margin-right: 0.75rem;
+  display: inline-block; }
+
+.textwidget .map-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .textwidget .map-icon i {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -733,14 +764,27 @@ object {
   background-repeat: no-repeat;
   background-position: bottom; }
   .hero-image .hero-heading {
-    color: #fff; }
+    color: #fff;
+    font-size: 3rem; }
 
 .about-page-content {
   width: 840px;
   margin: auto; }
   .about-page-content h2 {
-    text-align: center;
-    font-size: 2rem; }
+    text-align: center; }
+
+.content-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  min-width: 1120px; }
+  .content-page main {
+    -ms-flex-preferred-size: 1008px;
+        flex-basis: 1008px;
+    padding-left: 12rem;
+    padding-right: 3rem;
+    border-right: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Header
@@ -759,8 +803,8 @@ object {
   overflow: hidden;
   min-width: 1120px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid #c7c7c7;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1;
   z-index: 100; }
 
 /* Logo */

@@ -21,6 +21,7 @@ get_header(); ?>
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
+					<?php get_search_form(); ?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
