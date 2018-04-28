@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-    width: 100%;
+    min-width: $site__width;
+    width: 100vw;
     height: 350px;
     background: url(../../assets/images/dark-wood.png);
     align-self: flex-end;

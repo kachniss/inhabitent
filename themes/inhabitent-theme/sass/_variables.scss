@@ -7,6 +7,7 @@ $site__width: 1120px;
 
 $color__background-body: #fff;
 $color__text-main: #404040;
+$color__text-light: #fff;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -31,5 +32,8 @@ $color__heading-footer: #d99054;
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
+
+$font__h1-size: 3rem;
+$font__h2-size: 2rem;
