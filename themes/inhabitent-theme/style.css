@@ -632,6 +632,9 @@ a {
     -ms-flex-item-align: start;
         align-self: flex-start; }
 
+.widget-title {
+  font-size: 1.6rem; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -663,6 +666,9 @@ a {
 .archive .format-aside .entry-title {
   display: none; }
 
+aside {
+  margin-right: 0 !important; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -678,6 +684,22 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 100vh; }
+  .site .site-content {
+    width: 100vw; }
+
+.container {
+  width: 1120px;
+  margin: auto; }
+
+.content-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content-page main {
+    -ms-flex-preferred-size: 896px;
+        flex-basis: 896px;
+    padding-right: 3rem;
+    border-right: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media
@@ -767,45 +789,41 @@ object {
     color: #fff;
     font-size: 3rem; }
 
+.hero-home {
+  background-position: top; }
+  .hero-home .main-logo {
+    background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
+    width: 250px;
+    height: 250px; }
+
 .about-page-content {
   width: 840px;
   margin: auto; }
   .about-page-content h2 {
     text-align: center; }
 
-.content-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  min-width: 1120px; }
-  .content-page main {
-    -ms-flex-preferred-size: 1008px;
-        flex-basis: 1008px;
-    padding-left: 12rem;
-    padding-right: 3rem;
-    border-right: 1px solid #e1e1e1; }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: fixed;
-  overflow: hidden;
-  min-width: 1120px;
-  width: 100%;
+  width: 100vw;
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
-  z-index: 100; }
+  z-index: 100;
+  position: fixed;
+  overflow: hidden; }
+  .site-header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1120px;
+    margin: auto; }
 
 /* Logo */
 .site-branding {

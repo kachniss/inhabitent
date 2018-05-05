@@ -39,6 +39,10 @@
 	display: none;
 }
 
+aside {
+	margin-right: 0 !important;
+}
+
 /* Comments */
 
 .comment-content a {
@@ -54,4 +58,24 @@
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 100vh;
+
+	.site-content {
+		width: 100vw;
+	}
+}
+
+
+.container {
+	width: $site__width;
+	margin: auto;
+}
+
+.content-page {
+    display: flex;
+
+    main {
+        flex-basis: $site__width * .8;
+        padding-right: $base__space-unit * 2;
+        border-right: $border__solid;
+    }
 }

@@ -22,6 +22,16 @@
     .hero-heading {
         color: $color__text-light;
         font-size: 3rem;
+    }    
+}
+
+.hero-home {
+    background-position: top;
+
+    .main-logo {
+        background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -34,16 +44,4 @@
     }
 }
 
-.content-page {
-    display: flex;
-    width: 100vw;
-    min-width: $site__width;
-
-    main {
-        flex-basis: $site__width * .9;
-        padding-left: $base__space-unit * 8;
-        padding-right: $base__space-unit * 2;
-        border-right: $border__solid;
-    }
-}
 

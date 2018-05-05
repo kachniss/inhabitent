@@ -2,17 +2,23 @@
 # Header
 --------------------------------------------------------------*/
 .site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    overflow: hidden;
-    min-width: 1120px;
-    width: 100%;
+    width: 100vw;
     background: $color__background-header;
     border-bottom: $border__solid;
     z-index: 100;
+    position: fixed;
+    overflow: hidden;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: $site__width;
+        margin: auto;
+    }
+    
 }
+
 
 
 /* Logo */
