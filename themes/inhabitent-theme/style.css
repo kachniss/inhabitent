@@ -678,6 +678,16 @@ a {
       text-decoration: none;
       color: #fff;
       width: 75%; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #248A83;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Novecento, sans-serif;
+    padding: 0 1.5rem; }
 
 /* Asides */
 .blog .format-aside .entry-title,

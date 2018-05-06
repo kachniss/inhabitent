@@ -34,7 +34,7 @@
 
 .entry-header {
 	position: relative;
-	
+
 	img {
 		width: 100%;
 	}
@@ -52,6 +52,18 @@
 			color: $color__text-light;
 			width: 75%;
 		}
+	}
+
+	.entry-meta {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: $green-brand;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+		color: $color__text-light;
+		font-family: $font__family-heading;
+		padding: 0 $base__space-unit;
 	}
 }
 
