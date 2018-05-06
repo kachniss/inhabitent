@@ -49,6 +49,7 @@ add_action( 'after_setup_theme', 'red_starter_setup' );
 function red_starter_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
 
 /**

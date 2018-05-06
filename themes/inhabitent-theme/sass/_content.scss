@@ -32,6 +32,29 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.entry-header {
+	position: relative;
+	
+	img {
+		width: 100%;
+	}
+	.entry-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $green-brand;
+		width: 75%;
+
+		a {
+			display: inline-block;
+			padding-left: $base__space-unit;
+			text-decoration: none;
+			color: $color__text-light;
+			width: 75%;
+		}
+	}
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -63,7 +86,6 @@ aside {
 		width: 100vw;
 	}
 }
-
 
 .container {
 	width: $site__width;

@@ -34,14 +34,21 @@ function change_login_logo() {
 	} 
 	</style>
 	<?php 
-	} add_action( 'login_enqueue_scripts', 'change_login_logo' );
+}
+add_action( 'login_enqueue_scripts', 'change_login_logo' );
 
-	function change_login_logo_url() {
-		return home_url();
-	}
-	add_filter( 'login_headerurl', 'change_login_logo_url' );
+function change_login_logo_url() {
+	return home_url();
+}
+add_filter( 'login_headerurl', 'change_login_logo_url' );
 
-	function change_login_logo_url_title() {
-		return get_bloginfo();
-	}
-	add_filter( 'login_headertitle', 'change_login_logo_url_title' );
+function change_login_logo_url_title() {
+	return get_bloginfo();
+}
+add_filter( 'login_headertitle', 'change_login_logo_url_title' );
+
+/**
+ * disable srcset on frontend
+ * source: https://perishablepress.com/disable-wordpress-responsive-images/ 05/05/2018
+*/
+add_filter('max_srcset_image_width', create_function('', 'return 1;'));
