@@ -32,38 +32,79 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.entry-header {
-	position: relative;
 
-	img {
-		width: 100%;
-	}
-	.entry-title {
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: $green-brand;
-		width: 75%;
+.post {
+	.entry-header {
+		position: relative;
+	
+		img {
+			width: 100%;
+		}
 
 		a {
-			display: inline-block;
-			padding-left: $base__space-unit;
+			display: inline;
 			text-decoration: none;
 			color: $color__text-light;
-			width: 75%;
+
+			&:hover {
+				color: lighten($light-grey-brand, 25);
+			}
+		}
+
+		.entry-title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $green-brand;
+			width: 65%;
+			color: $color__text-light;
+			padding: 0 $base__space-unit;
+			font-size: $font__h2-size;
+		}
+	
+		.entry-meta {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: $green-brand;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+			color: $color__text-light;
+			font-family: $font__family-heading;
+			padding: 0 $base__space-unit;
 		}
 	}
 
-	.entry-meta {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		background: $green-brand;
-		margin-bottom: 8px;
-		text-transform: uppercase;
-		color: $color__text-light;
+	.entry-footer {
 		font-family: $font__family-heading;
-		padding: 0 $base__space-unit;
+		text-transform: uppercase;
+
+		a {
+			text-decoration: none;
+		}
+
+		span {
+			display: inline-block;
+			padding-right: $base__space-unit;
+		}
+	}
+}
+
+/* 404 page */
+
+.error-404 {
+	h2 {
+		font-size: $font__h2-size * .8;
+	}
+
+	.recent-post-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -108,7 +149,7 @@ aside {
     display: flex;
 
     main {
-        flex-basis: $site__width * .8;
+        flex-basis: $site__width * .7;
         padding-right: $base__space-unit * 2;
         border-right: $border__solid;
     }

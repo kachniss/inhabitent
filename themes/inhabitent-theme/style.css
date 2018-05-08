@@ -443,7 +443,8 @@ input[type="search"] {
 
 textarea {
   padding-left: 3px;
-  width: 80%; }
+  width: 80%;
+  resize: none; }
 
 label {
   font-family: Novecento, sans-serif;
@@ -451,6 +452,13 @@ label {
 
 .req {
   color: red; }
+
+.search-form fieldset {
+  border: 0;
+  padding-left: 0;
+  margin-left: 0; }
+  .search-form fieldset .search-submit {
+    display: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -662,23 +670,26 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-.entry-header {
+.post .entry-header {
   position: relative; }
-  .entry-header img {
+  .post .entry-header img {
     width: 100%; }
-  .entry-header .entry-title {
+  .post .entry-header a {
+    display: inline;
+    text-decoration: none;
+    color: #fff; }
+    .post .entry-header a:hover {
+      color: #e1e1e1; }
+  .post .entry-header .entry-title {
     position: absolute;
     top: 0;
     left: 0;
     background: #248A83;
-    width: 75%; }
-    .entry-header .entry-title a {
-      display: inline-block;
-      padding-left: 1.5rem;
-      text-decoration: none;
-      color: #fff;
-      width: 75%; }
-  .entry-header .entry-meta {
+    width: 65%;
+    color: #fff;
+    padding: 0 1.5rem;
+    font-size: 2rem; }
+  .post .entry-header .entry-meta {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -688,6 +699,26 @@ a {
     color: #fff;
     font-family: Novecento, sans-serif;
     padding: 0 1.5rem; }
+
+.post .entry-footer {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase; }
+  .post .entry-footer a {
+    text-decoration: none; }
+  .post .entry-footer span {
+    display: inline-block;
+    padding-right: 1.5rem; }
+
+/* 404 page */
+.error-404 h2 {
+  font-size: 1.6rem; }
+
+.error-404 .recent-post-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .error-404 .recent-post-list a {
+    text-decoration: none; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -724,8 +755,8 @@ aside {
   display: -ms-flexbox;
   display: flex; }
   .content-page main {
-    -ms-flex-preferred-size: 896px;
-        flex-basis: 896px;
+    -ms-flex-preferred-size: 784px;
+        flex-basis: 784px;
     padding-right: 3rem;
     border-right: 1px solid #e1e1e1; }
 

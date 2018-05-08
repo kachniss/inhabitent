@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-page container">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
@@ -22,10 +22,25 @@ get_header(); ?>
 
 					<?php get_search_form(); ?>
 
+					<h2><?php echo esc_html( 'Recent posts' ); ?></h2>
+					<ul class="recent-post-list">
+						<?php $posts_query = new WP_Query('posts_per_page=5');
+							while ($posts_query->have_posts()) : $posts_query->the_post();
+						?>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<?php endwhile; wp_reset_query(); ?>
+					</ul>
+
+					<h2><?php echo esc_html( 'Most used categories' ); ?></h2>
+
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+
+		<aside>
+			<?php get_sidebar(); ?>
+		</aside>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

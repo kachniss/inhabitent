@@ -40,7 +40,6 @@
     
         .footer-logo {
             flex: 0 0 250px;
-            // margin-left: 80px;
 
             img {
                 content: url(../../assets/images/logos/inhabitent-logo-text.svg);
@@ -56,7 +55,6 @@
             padding-top: $base__space-unit * 1.5;
         }
     }
-    
     
     .fas, .fab {
         display: inline-block;
