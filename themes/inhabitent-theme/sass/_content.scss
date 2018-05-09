@@ -32,10 +32,11 @@
 	margin: 0 0 $base__space-unit;
 }
 
-
 .post {
 	.entry-header {
 		position: relative;
+		width: 100%;
+		min-height: 600px;
 	
 		img {
 			width: 100%;

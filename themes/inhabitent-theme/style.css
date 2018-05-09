@@ -331,7 +331,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  font-family: Merriweather, serif; }
+  font-family: Merriweather, serif;
+  word-break: break-all; }
 
 h1, h2, h3 {
   font-family: Novecento, sans-serif;
@@ -671,7 +672,9 @@ a {
   margin: 0 0 1.5rem; }
 
 .post .entry-header {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  min-height: 600px; }
   .post .entry-header img {
     width: 100%; }
   .post .entry-header a {
