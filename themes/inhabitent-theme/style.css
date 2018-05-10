@@ -332,7 +332,8 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   font-family: Merriweather, serif;
-  word-break: break-all; }
+  word-wrap: break-word;
+  overflow-wrap: break-word; }
 
 h1, h2, h3 {
   font-family: Novecento, sans-serif;
@@ -762,6 +763,51 @@ aside {
         flex-basis: 784px;
     padding-right: 3rem;
     border-right: 1px solid #e1e1e1; }
+
+/* Products archive */
+.products-heading {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 1.5rem; }
+  .products-heading h1 {
+    margin-bottom: 0; }
+  .products-heading .products-navigation {
+    font-size: 1.2rem;
+    list-style: none;
+    width: 560px;
+    margin: auto;
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .products-heading .products-navigation li {
+      padding: 0 1.5rem; }
+
+/* Single product page */
+.single-product-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .single-product-page .product-image, .single-product-page .product-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 1.5rem; }
+  .single-product-page .product-image img {
+    height: auto; }
+  .single-product-page .product-content h1 {
+    color: #d99054;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .single-product-page .product-content .product-price {
+    font-family: Novecento, sans-serif;
+    font-size: 2rem;
+    margin-top: 0; }
 
 /*--------------------------------------------------------------
 # Media

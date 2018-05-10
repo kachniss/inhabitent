@@ -52,3 +52,12 @@ add_filter( 'login_headertitle', 'change_login_logo_url_title' );
  * source: https://perishablepress.com/disable-wordpress-responsive-images/ 05/05/2018
 */
 add_filter('max_srcset_image_width', create_function('', 'return 1;'));
+
+// change archive title
+function change_product_archive_title($title){
+	if (is_post_type_archive('products')) {
+		$title = "Shop Stuff";
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'change_product_archive_title');

@@ -56,7 +56,7 @@ function product_custom_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'product', $args );
+	register_post_type( 'products', $args );
 
 }
 add_action( 'init', 'product_custom_post_type', 0 );
