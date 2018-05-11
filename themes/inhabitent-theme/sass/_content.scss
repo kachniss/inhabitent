@@ -138,6 +138,7 @@ aside {
 
 	.site-content {
 		width: 100vw;
+		margin-bottom: $base__space-unit * 2;
 	}
 }
 
@@ -154,6 +155,41 @@ aside {
         padding-right: $base__space-unit * 2;
         border-right: $border__solid;
     }
+}
+
+/* Front page */
+
+.journal-container {
+	display: flex;
+	justify-content: space-between;
+
+	.journal-post {
+		flex-basis: 32%;
+		border: $border__solid;
+
+		.journal-post-thumbnail {
+			border-bottom: $border__solid ;
+			border-width: 3px;
+		}
+
+		.journal-post-info {
+			padding: $base__space-unit / 2;
+			p {
+				font-size: .8rem;
+				margin-bottom: 0;
+			}
+
+			h2 {
+				margin-top: 0;
+				font-size: $font__h2-size * .7;
+
+				a {
+					text-decoration: none;
+				}
+			}
+			
+		}
+	}
 }
 
 /* Products archive */
@@ -182,25 +218,38 @@ aside {
 	}
 }
 
+.products-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: $base__space-unit * 2;
+
+	.product-thumbnail {
+		flex-basis: 23%;
+		border: $border__solid;
+	}
+
+}
+
 /* Single product page */
 
 .single-product-page {
 	display: flex;
 	align-items: flex-start;
 
-	.product-image, .product-content {
+	.single-product-image, .single-product-content {
 		flex-basis: 50%;
 		padding: $base__space-unit;
 	}
 
-	.product-image {
+	.single-product-image {
 
 		img {
 			height: auto;
 		}
 	}
 
-	.product-content {
+	.single-product-content {
 
 		h1 {
 			color: $orange-brand;
@@ -208,7 +257,7 @@ aside {
 			margin-bottom: 0;
 		}
 
-		.product-price {
+		.single-product-price {
 			font-family: $font__family-heading;
 			font-size: 2rem;
 			margin-top: 0;

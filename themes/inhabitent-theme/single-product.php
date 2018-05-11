@@ -15,17 +15,16 @@ get_header(); ?>
 			<?php 
                 $image = CFS()->get( 'image' );
                 $price = CFS()->get( 'price' );
-				$excerpt = CFS()->get( 'excerpt' );
 			?>
 
-			<div class = "product-image">
+			<div class = "single-product-image">
 				<?php echo "<img src = $image />"; ?>
 			</div>
 
-			<div class = "product-content">
+			<div class = "single-product-content">
 				<h1><?php echo get_the_title();?></h1>
 
-				<?php echo "<p class = \"product-price\">\${$price}</p>"; ?>
+				<?php echo "<p class = \"single-product-price\">\${$price}</p>"; ?>
 				<p><?php echo get_the_content(); ?></p>
 
 			</div>

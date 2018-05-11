@@ -133,3 +133,23 @@ a {
 		width: 50%;
 	}
 }
+
+/* Link buttons style */
+.read-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: $base__space-unit/4 $base__space-unit;
+	border: 1px solid $purple-brand;
+	color: $purple-brand !important;
+	text-decoration: none;
+	font-family: $font__family-heading;
+	font-size: .9rem;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $green-brand;
+		color: $color__text-light !important;
+		border-color: $green-brand;
+	}
+}

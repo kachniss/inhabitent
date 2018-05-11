@@ -16,8 +16,54 @@ get_header(); ?>
             
             <div class="container">
                 <h1>Shop Stuff</h1>
-            </div>
+            
+            
+                <?php
+                    $args = array( 
+                        'post_type' => 'products', 
+                        'order' => 'DESC', 
+                        'posts_per_page' => 3 
+                    );
+                    $products = new WP_Query( $args ); // instantiate our object
+                ?>
+                <?php if ( $products->have_posts() ) : ?>
+                <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+                    <?php
+                        //the_title();
+                        //the_content();
+                    ?>
+                    <br>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+                <?php else : ?>
+                    <h2>Nothing found!</h2>
+                <?php endif; ?>
 
+                <h1>Inhabitent Journal</h1>
+                <?php $posts_query = new WP_Query('posts_per_page=3');?>
+
+                <div class="journal-container">
+                    <?php while ($posts_query->have_posts()) : $posts_query->the_post();?>
+                        <div class = "journal-post">
+                            <div class = "journal-post-thumbnail">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                            <div class="journal-post-info">
+                                <p>
+                                    <?php
+                                        the_date();
+                                        echo " / ";
+                                        comments_number('0 Comments');
+                                    ?>
+                                </p>
+                        
+                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                <a href="<?php the_permalink(); ?>" class="read-btn">Read entry</a>
+                            </div>
+                        </div>
+                    <?php endwhile; wp_reset_query(); ?>
+                </div>
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
