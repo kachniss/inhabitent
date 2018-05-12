@@ -56,13 +56,13 @@
 }
 
 .entry-container {
-    display: flex;
-    flex-wrap: wrap;
-	justify-content: space-between;
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: $base__space-unit * 2;
 
 	.entry-post {
         border: $border__solid;
-        margin: $base__space-unit 0;
 
 		.entry-thumbnail {
             height: 250px;
@@ -70,11 +70,17 @@
             background-repeat: no-repeat;
             background-position: center;
 			border-bottom: $border__solid ;
-			border-width: 3px;
+            border-width: 4px;
+
+            a {
+               display: block;
+               height: 250px;
+               min-width: 250px;
+            }
 		}
 
 		.entry-info {
-			padding: $base__space-unit / 2;
+            padding: $base__space-unit / 2;
 			p {
 				font-size: .8rem;
 				margin-bottom: 0;

@@ -1,5 +1,11 @@
 /* Home page */
+.home_page {
+	.journal-entry-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
-.journal-post {
-	flex-basis: 32%;
+	h1 {
+		text-align: center;
+		font-weight: normal;
+	}
 }

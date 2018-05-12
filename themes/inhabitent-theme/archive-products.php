@@ -31,6 +31,7 @@ get_header(); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                     <div class = "entry-post product-post">
                         <div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
+                            <a href= <?php the_permalink(); ?>></a>
                         </div>
                         <div class="entry-info">
                             <span class = "alignleft"><?php the_title(); ?></span>
