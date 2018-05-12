@@ -1,0 +1,17 @@
+/* 404 page */
+
+.error-404 {
+	h2 {
+		font-size: $font__h2-size * .8;
+	}
+
+	.recent-post-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}

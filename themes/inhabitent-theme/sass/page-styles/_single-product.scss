@@ -1,0 +1,33 @@
+/* Single product page */
+
+.single-product-page {
+	display: flex;
+	align-items: flex-start;
+
+	.single-product-image, .single-product-content {
+		flex-basis: 50%;
+		padding: $base__space-unit;
+	}
+
+	.single-product-image {
+
+		img {
+			height: auto;
+		}
+	}
+
+	.single-product-content {
+
+		h1 {
+			color: $orange-brand;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.single-product-price {
+			font-family: $font__family-heading;
+			font-size: 2rem;
+			margin-top: 0;
+		}
+	}
+}

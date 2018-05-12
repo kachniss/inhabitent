@@ -595,17 +595,18 @@ a {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-  display: inline;
   float: left;
-  margin-right: 1.5rem; }
+  margin-right: 0.15rem; }
 
 .alignright {
-  display: inline;
   float: right;
-  margin-left: 1.5rem; }
+  margin-left: 0.15rem; }
 
 .aligncenter {
-  clear: both;
+  overflow: auto;
+  position: relative;
+  border-bottom: 1.2px dotted #2f1339;
+  top: -8px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -690,7 +691,7 @@ a {
 .post .entry-header {
   position: relative;
   width: 100%;
-  min-height: 600px; }
+  min-height: 300px; }
   .post .entry-header img {
     width: 100%; }
   .post .entry-header a {
@@ -728,17 +729,6 @@ a {
     display: inline-block;
     padding-right: 1.5rem; }
 
-/* 404 page */
-.error-404 h2 {
-  font-size: 1.6rem; }
-
-.error-404 .recent-post-list {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  .error-404 .recent-post-list a {
-    text-decoration: none; }
-
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -764,7 +754,8 @@ aside {
   min-height: 100vh; }
   .site .site-content {
     width: 100vw;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    margin-top: 50px; }
 
 .container {
   width: 1120px;
@@ -780,33 +771,91 @@ aside {
     padding-right: 3rem;
     border-right: 1px solid #e1e1e1; }
 
-/* Front page */
-.journal-container {
+.hero-image {
+  margin-top: -50px;
+  height: 100vh;
+  width: 100vw;
+  min-width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .hero-image .hero-heading {
+    color: #fff;
+    font-size: 3rem; }
+
+.hero-home {
+  background-position: top; }
+  .hero-home .main-logo {
+    background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
+    width: 250px;
+    height: 250px; }
+
+.entry-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .journal-container .journal-post {
-    -ms-flex-preferred-size: 32%;
-        flex-basis: 32%;
-    border: 1px solid #e1e1e1; }
-    .journal-container .journal-post .journal-post-thumbnail {
+  .entry-container .entry-post {
+    border: 1px solid #e1e1e1;
+    margin: 1.5rem 0; }
+    .entry-container .entry-post .entry-thumbnail {
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       border-bottom: 1px solid #e1e1e1;
       border-width: 3px; }
-    .journal-container .journal-post .journal-post-info {
+    .entry-container .entry-post .entry-info {
       padding: 0.75rem; }
-      .journal-container .journal-post .journal-post-info p {
+      .entry-container .entry-post .entry-info p {
         font-size: .8rem;
         margin-bottom: 0; }
-      .journal-container .journal-post .journal-post-info h2 {
+      .entry-container .entry-post .entry-info h2 {
         margin-top: 0;
         font-size: 1.4rem; }
-        .journal-container .journal-post .journal-post-info h2 a {
+        .entry-container .entry-post .entry-info h2 a {
           text-decoration: none; }
 
+.about-page-content {
+  width: 840px;
+  margin: auto; }
+  .about-page-content h2 {
+    text-align: center; }
+
+/* Home page */
+.journal-post {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%; }
+
+/* 404 page */
+.error-404 h2 {
+  font-size: 1.6rem; }
+
+.error-404 .recent-post-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .error-404 .recent-post-list a {
+    text-decoration: none; }
+
 /* Products archive */
+.product-post {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%; }
+
 .products-heading {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;
@@ -827,21 +876,6 @@ aside {
             justify-content: center; }
     .products-heading .products-navigation li {
       padding: 0 1.5rem; }
-
-.products-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem; }
-  .products-container .product-thumbnail {
-    -ms-flex-preferred-size: 23%;
-        flex-basis: 23%;
-    border: 1px solid #e1e1e1; }
 
 /* Single product page */
 .single-product-page {
@@ -925,47 +959,6 @@ object {
 
 .gallery-caption {
   display: block; }
-
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-.site-content {
-  margin-top: 50px; }
-
-.hero-image {
-  margin-top: -50px;
-  height: 100vh;
-  width: 100vw;
-  min-width: 1120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom; }
-  .hero-image .hero-heading {
-    color: #fff;
-    font-size: 3rem; }
-
-.hero-home {
-  background-position: top; }
-  .hero-home .main-logo {
-    background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
-    width: 250px;
-    height: 250px; }
-
-.about-page-content {
-  width: 840px;
-  margin: auto; }
-  .about-page-content h2 {
-    text-align: center; }
 
 /*--------------------------------------------------------------
 # Header

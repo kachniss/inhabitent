@@ -1,0 +1,29 @@
+/* Products archive */
+
+.product-post {
+	flex-basis: 23%;
+}
+
+.products-heading {
+	text-align: center;
+	border-bottom: $border__dashed;
+	padding-bottom: $base__space-unit;
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	.products-navigation {
+		font-size: 1.2rem;
+		list-style: none;
+		width: $site__width/2;
+		margin: auto;
+		padding: $base__space-unit;
+		display: flex;
+		justify-content: center;
+
+		li {
+			padding: 0 $base__space-unit;
+		}
+	}
+}

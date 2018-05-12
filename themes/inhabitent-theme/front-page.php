@@ -42,13 +42,12 @@ get_header(); ?>
                 <h1>Inhabitent Journal</h1>
                 <?php $posts_query = new WP_Query('posts_per_page=3');?>
 
-                <div class="journal-container">
+                <div class="entry-container">
                     <?php while ($posts_query->have_posts()) : $posts_query->the_post();?>
-                        <div class = "journal-post">
-                            <div class = "journal-post-thumbnail">
-                                <?php the_post_thumbnail(); ?>
+                        <div class = "entry-post journal-post">
+                            <div class = "entry-thumbnail" style = "background-image: url(<?php the_post_thumbnail_url(); ?>) ">
                             </div>
-                            <div class="journal-post-info">
+                            <div class="entry-info">
                                 <p>
                                     <?php
                                         the_date();

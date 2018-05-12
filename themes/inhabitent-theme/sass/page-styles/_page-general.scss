@@ -1,0 +1,104 @@
+/* Page layout */
+
+.site {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+
+	.site-content {
+		width: 100vw;
+        margin-bottom: $base__space-unit * 2;
+        margin-top: 50px;
+	}
+}
+
+.container {
+	width: $site__width;
+	margin: auto;
+}
+
+.content-page {
+    display: flex;
+
+    main {
+        flex-basis: $site__width * .7;
+        padding-right: $base__space-unit * 2;
+        border-right: $border__solid;
+    }
+}
+
+.hero-image {
+    margin-top: -50px;
+    height: 100vh;
+    width: 100vw;
+    min-width: $site__width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .hero-heading {
+        color: $color__text-light;
+        font-size: 3rem;
+    }    
+}
+
+.hero-home {
+    background-position: top;
+
+    .main-logo {
+        background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.entry-container {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+
+	.entry-post {
+        border: $border__solid;
+        margin: $base__space-unit 0;
+
+		.entry-thumbnail {
+            height: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+			border-bottom: $border__solid ;
+			border-width: 3px;
+		}
+
+		.entry-info {
+			padding: $base__space-unit / 2;
+			p {
+				font-size: .8rem;
+				margin-bottom: 0;
+			}
+
+			h2 {
+				margin-top: 0;
+				font-size: $font__h2-size * .7;
+
+				a {
+					text-decoration: none;
+				}
+			}	
+		}
+	}
+}
+
+.about-page-content {
+    width: $site__width * .75;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+

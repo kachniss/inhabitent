@@ -36,7 +36,7 @@
 	.entry-header {
 		position: relative;
 		width: 100%;
-		min-height: 600px;
+		min-height: 300px;
 	
 		img {
 			width: 100%;
@@ -91,24 +91,6 @@
 	}
 }
 
-/* 404 page */
-
-.error-404 {
-	h2 {
-		font-size: $font__h2-size * .8;
-	}
-
-	.recent-post-list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-
-		a {
-			text-decoration: none;
-		}
-	}
-}
-
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -127,140 +109,4 @@ aside {
 }
 .bypostauthor {
 	display: block;
-}
-
-/* Page layout */
-
-.site {
-	display: flex;
-	flex-wrap: wrap;
-	min-height: 100vh;
-
-	.site-content {
-		width: 100vw;
-		margin-bottom: $base__space-unit * 2;
-	}
-}
-
-.container {
-	width: $site__width;
-	margin: auto;
-}
-
-.content-page {
-    display: flex;
-
-    main {
-        flex-basis: $site__width * .7;
-        padding-right: $base__space-unit * 2;
-        border-right: $border__solid;
-    }
-}
-
-/* Front page */
-
-.journal-container {
-	display: flex;
-	justify-content: space-between;
-
-	.journal-post {
-		flex-basis: 32%;
-		border: $border__solid;
-
-		.journal-post-thumbnail {
-			border-bottom: $border__solid ;
-			border-width: 3px;
-		}
-
-		.journal-post-info {
-			padding: $base__space-unit / 2;
-			p {
-				font-size: .8rem;
-				margin-bottom: 0;
-			}
-
-			h2 {
-				margin-top: 0;
-				font-size: $font__h2-size * .7;
-
-				a {
-					text-decoration: none;
-				}
-			}
-			
-		}
-	}
-}
-
-/* Products archive */
-
-.products-heading {
-	text-align: center;
-	border-bottom: $border__dashed;
-	padding-bottom: $base__space-unit;
-
-	h1 {
-		margin-bottom: 0;
-	}
-
-	.products-navigation {
-		font-size: 1.2rem;
-		list-style: none;
-		width: $site__width/2;
-		margin: auto;
-		padding: $base__space-unit;
-		display: flex;
-		justify-content: center;
-
-		li {
-			padding: 0 $base__space-unit;
-		}
-	}
-}
-
-.products-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: $base__space-unit * 2;
-
-	.product-thumbnail {
-		flex-basis: 23%;
-		border: $border__solid;
-	}
-
-}
-
-/* Single product page */
-
-.single-product-page {
-	display: flex;
-	align-items: flex-start;
-
-	.single-product-image, .single-product-content {
-		flex-basis: 50%;
-		padding: $base__space-unit;
-	}
-
-	.single-product-image {
-
-		img {
-			height: auto;
-		}
-	}
-
-	.single-product-content {
-
-		h1 {
-			color: $orange-brand;
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.single-product-price {
-			font-family: $font__family-heading;
-			font-size: 2rem;
-			margin-top: 0;
-		}
-	}
 }

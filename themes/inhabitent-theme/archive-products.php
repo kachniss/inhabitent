@@ -27,19 +27,17 @@ get_header(); ?>
                 </ul>
             </header>
 
-            <div class = "products-container">
+            <div class = "entry-container">
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <div class = "product-thumbnail">
-                        <img src = <?php echo CFS()->get('image'); ?> />
-                        <p>
-                            <?php
-                                the_title();
-                                echo "\$" . CFS()->get('price');
-                            ?>
-
-                        </p>
+                    <div class = "entry-post product-post">
+                        <div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
+                        </div>
+                        <div class="entry-info">
+                            <span class = "alignleft"><?php the_title(); ?></span>
+                            <span class = "aligncenter">&nbsp;</span>
+                            <span class = "alignright"><?php echo "\$" . CFS()->get('price'); ?></span>
+                        </div>
                     </div>
-
                 <?php endwhile; ?>
             </div>
 

@@ -61,7 +61,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules";
 @import "widgets";
 @import "content";
+@import "page-styles/page-general";
+@import "page-styles/home-page";
+@import "page-styles/404";
+@import "page-styles/products-archive";
+@import "page-styles/single-product";
 @import "media";
-@import "page-templates";
 @import "header";
 @import "footer";
