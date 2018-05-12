@@ -26,6 +26,11 @@ get_header(); ?>
 
 				<?php echo "<p class = \"single-product-price\">\${$price}</p>"; ?>
 				<p><?php echo get_the_content(); ?></p>
+				<div class = "social-links">
+					<a class = "btn inverse-btn"><span class="fab fa-facebook-f"></span>like</a>
+					<a class = "btn inverse-btn"><span class="fab fa-twitter"></span>tweet</a>
+					<a class = "btn inverse-btn"><span class="fab fa-pinterest"></span>pin</a>
+				</div>
 
 			</div>
 

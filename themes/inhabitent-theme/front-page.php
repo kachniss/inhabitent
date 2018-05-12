@@ -53,7 +53,7 @@ get_header(); ?>
                                 </p>
                         
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                <a href="<?php the_permalink(); ?>" class="btn read-btn">Read entry</a>
+                                <a href="<?php the_permalink(); ?>" class="btn inverse-btn">Read entry</a>
                             </div>
                         </div>
                     <?php endwhile; wp_reset_query(); ?>

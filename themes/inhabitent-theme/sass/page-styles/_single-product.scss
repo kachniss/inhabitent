@@ -3,7 +3,7 @@
 .single-product-page {
 	display: flex;
 	align-items: flex-start;
-	margin-top: $base__space-unit;
+	margin: $base__space-unit 0;
 
 	.single-product-image, .single-product-content {
 		flex-basis: 50%;
@@ -29,6 +29,16 @@
 			font-family: $font__family-heading;
 			font-size: 2rem;
 			margin-top: 0;
+		}
+
+		.social-links {
+			&:hover {
+				cursor: pointer;
+			}
+			span {
+				display: inline-block;
+				padding-right: $base__space-unit / 2;
+			}
 		}
 	}
 }
