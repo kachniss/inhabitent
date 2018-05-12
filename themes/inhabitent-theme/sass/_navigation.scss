@@ -135,16 +135,34 @@ a {
 }
 
 /* Link buttons style */
-.read-btn {
+.btn {
 	display: inline-block;
 	text-transform: uppercase;
-	padding: $base__space-unit/4 $base__space-unit;
-	border: 1px solid $purple-brand;
-	color: $purple-brand !important;
 	text-decoration: none;
 	font-family: $font__family-heading;
 	font-size: .9rem;
+	padding: $base__space-unit/4 $base__space-unit;
+	background: $green-brand;
+	color: $color__text-light !important;
 
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__text-light !important;
+		background: darken($green-brand, 10);
+	}
+}
+
+.shop-btn {
+	text-align: center;
+	margin: auto;
+}
+
+.read-btn {
+	border: 1px solid $purple-brand;
+	color: $purple-brand !important;
+	background: $color__background-body;
+	
 	&:hover,
 	&:focus,
 	&:active {

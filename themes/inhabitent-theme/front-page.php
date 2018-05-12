@@ -23,35 +23,17 @@ get_header(); ?>
                     $terms = get_terms([
                         'taxonomy' => 'product-type',
                         'hide_empty' => false,
-                    ]);
+                    ]); ?>
 
-                    foreach ( $terms as $term ) {
-                        echo '<div class = "entry-post">' . $term->name . '</div>';
-                    }
-                    ?>
+                    <?php foreach ( $terms as $term ): ?>
+                        <div class = "entry-post product-category-entry">
+                            <img src= <?php echo bloginfo('template_url') . "/assets/images/product-type-icons/" . $term->slug . ".svg"; ?> />
+                            <p> <?php echo $term->description ?> </p>
+                            <a href = " <?php echo get_term_link($term); ?> " class = "btn shop-btn"><?php echo $term->name . " stuff" ?></a>
+                        </div>
+
+                    <?php endforeach; ?>
                 </div>
-            
-            
-                <?php
-                    // $args = array( 
-                    //     'post_type' => 'products', 
-                    //     // 'order' => 'DESC', 
-                    //     // 'posts_per_page' => 3 
-                    // );
-                    // $products = new WP_Query( $args ); // instantiate our object
-                ?>
-                <?php //if ( $products->have_posts() ) : ?>
-                <?php //while ( $products->have_posts() ) : $products->the_post(); ?>
-                    <?php
-                        // the_title();
-                        //the_content();
-                    ?>
-                    <br>
-                <?php //endwhile; ?>
-                <?php //wp_reset_postdata(); ?>
-                <?php //else : ?>
-                    <!-- <h2>Nothing found!</h2> -->
-                <?php //endif; ?>
 
                 <h1>Inhabitent Journal</h1>
                 <?php $posts_query = new WP_Query('posts_per_page=3');?>
@@ -71,7 +53,7 @@ get_header(); ?>
                                 </p>
                         
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                <a href="<?php the_permalink(); ?>" class="read-btn">Read entry</a>
+                                <a href="<?php the_permalink(); ?>" class="btn read-btn">Read entry</a>
                             </div>
                         </div>
                     <?php endwhile; wp_reset_query(); ?>

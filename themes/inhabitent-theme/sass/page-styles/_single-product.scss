@@ -3,6 +3,7 @@
 .single-product-page {
 	display: flex;
 	align-items: flex-start;
+	margin-top: $base__space-unit;
 
 	.single-product-image, .single-product-content {
 		flex-basis: 50%;

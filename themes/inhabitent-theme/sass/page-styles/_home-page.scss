@@ -1,5 +1,6 @@
 /* Home page */
 .home_page {
+
 	.journal-entry-container {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -7,5 +8,16 @@
 	h1 {
 		text-align: center;
 		font-weight: normal;
+	}
+
+	.product-category-entry {
+		text-align: center;
+		padding: $base__space-unit;
+		border-top-width: 4px;
+
+		img {
+			width: 80px;
+			height: 80px;
+		}
 	}
 }
