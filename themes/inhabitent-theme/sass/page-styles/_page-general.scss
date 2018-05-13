@@ -54,6 +54,11 @@
     }
 }
 
+.hero-adventures {
+    height: 130vh;
+    // background-size: 100%;
+}
+
 .entry-container {
     display: grid;
     grid-gap: 20px 20px;
@@ -97,12 +102,23 @@
 	}
 }
 
-.about-page-content {
+.single-page-content {
     width: $site__width * .75;
     margin: auto;
 
+    h1 {
+        margin-top: $base__space-unit * 2;
+        margin-bottom: 0;
+    }
+
     h2 {
         text-align: center;
+    }
+
+    .post-author {
+        text-transform: uppercase;
+        font-family: $font__family-heading;
+        font-size: 1.2rem;
     }
 }
 

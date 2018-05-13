@@ -40,7 +40,7 @@ function products_custom_post_type() {
 	);
 	$args = array(
 		'label'                 => __( 'Product', 'inhabitent-theme' ),
-		'description'           => __( 'This is a custom post type for our product', 'inhabitent-theme' ),
+		'description'           => __( 'This is a custom post type for products', 'inhabitent-theme' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),
 		'hierarchical'          => false,
@@ -95,7 +95,7 @@ function adventures_custom_post_type() {
 	);
 	$args = array(
 		'label'                 => __( 'Adventure', 'inhabitent-theme' ),
-		'description'           => __( 'Post Type Description', 'inhabitent-theme' ),
+		'description'           => __( 'This is a custom post type for adventures', 'inhabitent-theme' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array(),

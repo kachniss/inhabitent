@@ -16,7 +16,7 @@ get_header(); ?>
 					</h1>
 				</div>
 				
-				<div class="about-page-content">
+				<div class="single-page-content">
 					<?php the_content(); ?>
 				</div>
 			<?php endwhile; ?>

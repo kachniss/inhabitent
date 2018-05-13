@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single products.
  *
  * @package RED_Starter_Theme
  */
@@ -22,10 +22,10 @@ get_header(); ?>
 			</div>
 
 			<div class = "single-product-content">
-				<h1><?php echo get_the_title();?></h1>
+				<h1><?php the_title();?></h1>
 
 				<?php echo "<p class = \"single-product-price\">\${$price}</p>"; ?>
-				<p><?php echo get_the_content(); ?></p>
+				<p><?php the_content(); ?></p>
 				<div class = "social-links">
 					<a class = "btn inverse-btn"><span class="fab fa-facebook-f"></span>like</a>
 					<a class = "btn inverse-btn"><span class="fab fa-twitter"></span>tweet</a>

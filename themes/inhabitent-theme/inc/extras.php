@@ -56,7 +56,10 @@ add_filter('max_srcset_image_width', create_function('', 'return 1;'));
 // change archive title
 function change_product_archive_title($title){
 	if (is_post_type_archive('products')) {
-		$title = "Shop Stuff";
+		$title = "Shop stuff";
+	}
+	if (is_post_type_archive('adventures')) {
+		$title = "Latest adventures";
 	}
 	return $title;
 }

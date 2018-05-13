@@ -30,15 +30,15 @@
 			font-size: 2rem;
 			margin-top: 0;
 		}
+	}
+}
 
-		.social-links {
-			&:hover {
-				cursor: pointer;
-			}
-			span {
-				display: inline-block;
-				padding-right: $base__space-unit / 2;
-			}
-		}
+.social-links {
+	&:hover {
+		cursor: pointer;
+	}
+	span {
+		display: inline-block;
+		padding-right: $base__space-unit / 2;
 	}
 }
