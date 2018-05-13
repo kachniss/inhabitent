@@ -27,10 +27,10 @@ get_header(); ?>
                     ]); ?>
 
                     <?php foreach ( $terms as $term ): ?>
-                        <div class = "entry-post product-category-entry">
+                        <div class="entry-post product-category-entry">
                             <img src= <?php echo esc_url( get_template_directory_uri() ) . "/assets/images/product-type-icons/" . $term->slug . ".svg"; ?> />
                             <p> <?php echo $term->description ?> </p>
-                            <a href = " <?php echo get_term_link($term); ?> " class = "btn shop-btn"><?php echo $term->name . " stuff" ?></a>
+                            <a href = " <?php echo get_term_link($term); ?> " class="btn shop-btn"><?php echo $term->name . " stuff" ?></a>
                         </div>
 
                     <?php endforeach; ?>
@@ -41,8 +41,8 @@ get_header(); ?>
 
                 <div class="entry-container journal-entry-container">
                     <?php while ($posts_query->have_posts()) : $posts_query->the_post();?>
-                        <div class = "entry-post journal-post">
-                            <div class = "entry-thumbnail" style = "background-image: url(<?php the_post_thumbnail_url(); ?>) ">
+                        <div class="entry-post journal-post">
+                            <div class="entry-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>) ">
                             </div>
                             <div class="entry-info">
                                 <p>
@@ -61,7 +61,7 @@ get_header(); ?>
                 </div>
 
                 <h1>Latest adventures</h1>
-                <div class = "adventure-container">
+                <div class="adventure-container">
                     <?php
                         $args = array( 
                             'post_type' => 'adventures',
@@ -71,7 +71,7 @@ get_header(); ?>
                     ?>
                     <?php if ( $adventures->have_posts() ) : ?>
                         <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-                        <div class = "adventure"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>)">
+                        <div class="adventure"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>)">
                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <a href="<?php the_permalink(); ?>" class="btn transparent-btn">Read more</a>
                         </div>
