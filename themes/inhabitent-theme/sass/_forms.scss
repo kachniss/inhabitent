@@ -33,8 +33,8 @@ input[type="submit"] {
 }
 
 .inverse-btn {
-	border: 1px solid $purple-brand;
-	color: $purple-brand !important;
+	border: 1px solid $color__text-main;
+	color: $color__text-main !important;
 	background: $color__background-body;
 	
 	&:hover,
@@ -42,6 +42,23 @@ input[type="submit"] {
 	&:active {
 		background: $green-brand;
 		color: $color__text-light !important;
+		border-color: $green-brand;
+	}
+}
+
+.adventures-btn {
+	margin-top: $base__space-unit;
+	font-size: 1.1rem;
+}
+
+.transparent-btn {
+	background: transparent;
+	border: 1px solid $color__text-light;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $green-brand;
 		border-color: $green-brand;
 	}
 }
