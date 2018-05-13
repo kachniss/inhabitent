@@ -14,15 +14,15 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<h1 class="page-title">Oops! That page can&rsquo;t be found.</h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
 
 					<?php get_search_form(); ?>
 
-					<h2><?php echo esc_html( 'Recent posts' ); ?></h2>
+					<h2>Recent posts</h2>
 					<ul class="recent-post-list">
 						<?php $posts_query = new WP_Query('posts_per_page=5');
 							while ($posts_query->have_posts()) : $posts_query->the_post();
@@ -31,7 +31,37 @@ get_header(); ?>
 						<?php endwhile; wp_reset_query(); ?>
 					</ul>
 
-					<h2><?php echo esc_html( 'Most used categories' ); ?></h2>
+					<h2>Most used categories</h2>
+					<?php 
+						$args = array(
+							'number' => 4,
+							'orderby' => 'count',
+							'order'=> 'DESC',
+							'show_count' => 1,
+							'title_li' => 0,
+						);
+					?>
+					<ul class = "recent-post-list">
+						<?php wp_list_categories($args); ?>
+					</ul>
+					<h2>Archives</h2>
+					<p>Try looking in the monthly archives. &#x1F642;</p>
+					<?php $args = array(
+						'type'            => 'monthly',
+						'limit'           => '',
+						'format'          => 'option', 
+						'before'          => '',
+						'after'           => '',
+						'show_post_count' => false,
+						'echo'            => 1,
+						'order'           => 'DESC',
+						'post_type'     => 'post'
+					); ?>
+
+					<select class = "archive-select" >
+						<option value=""> Select Month </option>
+						<?php wp_get_archives( $args ); ?>
+					</select>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->

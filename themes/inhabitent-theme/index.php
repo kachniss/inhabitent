@@ -20,8 +20,11 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<article>
+					<?php get_template_part( 'template-parts/content' ); ?>
+					<?php //the_content(); ?>
+					<a href="<?php the_permalink(); ?>" class="btn inverse-btn read-more">Read more</a>
+			</article>
 
 			<?php endwhile; ?>
 

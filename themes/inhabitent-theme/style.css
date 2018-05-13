@@ -572,6 +572,9 @@ a {
     color: #fff !important;
     border-color: #248A83; }
 
+.read-more::after {
+  content: " \2192"; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -607,18 +610,19 @@ a {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-  float: left;
-  margin-right: 0.15rem; }
+  position: relative;
+  float: left; }
 
 .alignright {
-  float: right;
-  margin-left: 0.15rem; }
+  position: relative;
+  float: right; }
 
 .aligncenter {
-  overflow: auto;
+  clear: both;
   position: relative;
   border-bottom: 1.2px dotted #2f1339;
-  top: -8px;
+  width: 90%;
+  top: -9px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -806,8 +810,7 @@ aside {
 
 .hero-home {
   background-position: top; }
-  .hero-home .main-logo {
-    background: url(../../assets/images/logos/inhabitent-logo-full.svg) center/250px no-repeat;
+  .hero-home .main-logo img {
     width: 250px;
     height: 250px; }
 
@@ -858,6 +861,8 @@ aside {
   text-align: center;
   padding: 1.5rem;
   border-top-width: 4px; }
+  .home_page .product-category-entry:hover {
+    border-color: #d99054; }
   .home_page .product-category-entry img {
     width: 80px;
     height: 80px; }
@@ -872,6 +877,11 @@ aside {
   list-style: none; }
   .error-404 .recent-post-list a {
     text-decoration: none; }
+
+.error-404 .archive-select {
+  font-family: Merriweather, serif; }
+  .error-404 .archive-select option {
+    font-size: 12.8px; }
 
 /* Products archive */
 .products-heading {
@@ -894,6 +904,10 @@ aside {
             justify-content: center; }
     .products-heading .products-navigation li {
       padding: 0 1.5rem; }
+
+.product-info {
+  display: grid;
+  grid-template-columns: auto 1fr auto; }
 
 /* Single product page */
 .single-product-page {
@@ -1067,8 +1081,7 @@ object {
           -ms-flex: 0 0 250px;
               flex: 0 0 250px; }
       .site-footer .site-info .footer-logo img {
-        content: url(../../assets/images/logos/inhabitent-logo-text.svg);
-        max-height: 50px; }
+        height: 50px; }
     .site-footer .site-info .copyright {
       font-family: Novecento, sans-serif;
       text-align: center;

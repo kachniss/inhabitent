@@ -35,7 +35,7 @@
 					</div>
 					<div class="footer-logo">
 						<a href="/inhabitent" rel="home">
-							<img alt="Inhabitent Logo Text"/>
+							<img src= <?php echo bloginfo('template_url') . "/assets/images/logos/inhabitent-logo-text.svg"; ?> alt="Inhabitent Logo Text"/>
 						</a>
 					</div>
 					<div class="copyright">Copyright &copy; 2018 Inhabitent</div>

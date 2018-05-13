@@ -11,7 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main home_page" role="main">
 
             <div class="hero-image hero-home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(<?php the_post_thumbnail_url(); ?>)">
-				<div class="main-logo"></div>
+				<div class="main-logo">
+                    <img src= <?php echo bloginfo('template_url') . "/assets/images/logos/inhabitent-logo-full.svg"; ?> alt = "Inhabitent Main Logo" />
+                </div>
             </div>
             
             <div class="container">

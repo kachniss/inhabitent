@@ -171,3 +171,9 @@ a {
 		border-color: $green-brand;
 	}
 }
+
+.read-more {
+	&::after {
+		content: " \2192";
+	}
+}

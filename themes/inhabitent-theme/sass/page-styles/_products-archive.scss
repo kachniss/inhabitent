@@ -1,11 +1,5 @@
 /* Products archive */
 
-.product-post {
-	// flex-basis: 25%;
-	// max-width: 23%;
-	// margin: auto;
-}
-
 .products-heading {
 	text-align: center;
 	border-bottom: $border__dashed;
@@ -28,4 +22,9 @@
 			padding: 0 $base__space-unit;
 		}
 	}
+}
+
+.product-info {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
 }

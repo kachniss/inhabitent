@@ -45,10 +45,10 @@ get_header(); ?>
                             <div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
                                 <a href= <?php the_permalink(); ?>></a>
                             </div>
-                            <div class="entry-info">
-                                <span class = "alignleft"><?php the_title(); ?></span>
+                            <div class="entry-info product-info">
+                                <span><?php the_title(); ?></span>
                                 <span class = "aligncenter">&nbsp;</span>
-                                <span class = "alignright"><?php echo "\$" . CFS()->get('price'); ?></span>
+                                <span><?php echo "\$" . CFS()->get('price'); ?></span>
                             </div>
                         </div>
                     <?php endwhile; ?>

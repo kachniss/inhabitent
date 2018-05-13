@@ -35,24 +35,21 @@
 --------------------------------------------------------------*/
 
 .alignleft {
-	// display: inline-block;
+	position: relative;
 	float: left;
-	margin-right: $base__space-unit / 10;
 }
 
 .alignright {
-	// display: inline;
+	position: relative;
 	float: right;
-	margin-left: $base__space-unit / 10;
 }
 
 .aligncenter {
-	// clear: both;
-	overflow: auto;
+	clear: both;
 	position: relative;
 	border-bottom: $border__dotted;
-	top: -8px;
-	// display: inline-block;
+	width: 90%;
+	top: -9px;
 	@include center-block;
 }
 
