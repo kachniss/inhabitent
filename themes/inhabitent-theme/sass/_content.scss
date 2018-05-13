@@ -32,64 +32,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.post {
-	.entry-header {
-		position: relative;
-		width: 100%;
-		min-height: 300px;
-	
-		img {
-			width: 100%;
-		}
 
-		a {
-			display: inline;
-			text-decoration: none;
-			color: $color__text-light;
-
-			&:hover {
-				color: lighten($light-grey-brand, 25);
-			}
-		}
-
-		.entry-title {
-			position: absolute;
-			top: 0;
-			left: 0;
-			background: $green-brand;
-			width: 65%;
-			color: $color__text-light;
-			padding: 0 $base__space-unit;
-			font-size: $font__h2-size;
-		}
-	
-		.entry-meta {
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			background: $green-brand;
-			margin-bottom: 8px;
-			text-transform: uppercase;
-			color: $color__text-light;
-			font-family: $font__family-heading;
-			padding: 0 $base__space-unit;
-		}
-	}
-
-	.entry-footer {
-		font-family: $font__family-heading;
-		text-transform: uppercase;
-
-		a {
-			text-decoration: none;
-		}
-
-		span {
-			display: inline-block;
-			padding-right: $base__space-unit;
-		}
-	}
-}
 
 /* Asides */
 

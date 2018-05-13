@@ -61,3 +61,16 @@ function change_product_archive_title($title){
 	return $title;
 }
 add_filter('get_the_archive_title', 'change_product_archive_title');
+
+// add read more button
+function insertReadMore($excerpt) {
+	if(!is_feed() && is_home()) {
+			// $content = get_the_excerpt();
+			$excerpt.= "<a href=";
+			$excerpt.= get_permalink();
+			$excerpt.= " class='btn inverse-btn read-more'>Read more</a>";
+			echo $excerpt;
+	}
+	return;// $content;
+}
+add_filter ('the_excerpt', 'insertReadMore');

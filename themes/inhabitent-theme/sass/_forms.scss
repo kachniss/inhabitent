@@ -3,24 +3,52 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
-
+/* Link buttons style */
+.btn,
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: $border__solid;
-	background: $green-brand;
-	color: $color__text-light;
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	border: 0;
+	display: inline-block;
 	text-transform: uppercase;
-	line-height: $font__line-height-body;
-	padding: $base__space-unit / 2 $base__space-unit;
+	text-decoration: none;
+	font-family: $font__family-heading;
+	font-size: .9rem;
+	padding: $base__space-unit/4 $base__space-unit;
+	background: $green-brand;
+	color: $color__text-light !important;
 
-	&:hover, &:active, &:focus {
-		background: darken($green-brand, 15);
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__text-light !important;
+		background: darken($green-brand, 10);
+	}
+}
+
+.shop-btn {
+	text-align: center;
+	margin: auto;
+}
+
+.inverse-btn {
+	border: 1px solid $purple-brand;
+	color: $purple-brand !important;
+	background: $color__background-body;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		background: $green-brand;
+		color: $color__text-light !important;
+		border-color: $green-brand;
+	}
+}
+
+.read-more {
+	&::after {
+		content: " \2192";
 	}
 }
 

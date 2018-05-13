@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area content-page container">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main " role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -20,12 +20,9 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article>
-					<?php get_template_part( 'template-parts/content' ); ?>
-					<?php //the_content(); ?>
-					<a href="<?php the_permalink(); ?>" class="btn inverse-btn read-more">Read more</a>
-			</article>
 
+				<?php get_template_part( 'template-parts/content' ); ?>
+				
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
