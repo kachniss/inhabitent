@@ -484,7 +484,7 @@ label {
   font-family: Novecento, sans-serif;
   text-transform: uppercase; }
 
-.req {
+.required {
   color: red; }
 
 .search-form fieldset {
@@ -714,13 +714,6 @@ a {
 aside {
   margin-right: 0 !important; }
 
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
 /* Page layout */
 .site {
   display: -webkit-box;
@@ -731,8 +724,10 @@ aside {
   min-height: 100vh; }
   .site .site-content {
     width: 100vw;
-    margin-bottom: 3rem;
     margin-top: 50px; }
+
+main {
+  padding-bottom: 3rem; }
 
 .container {
   width: 1120px;
@@ -955,6 +950,78 @@ aside {
       display: inline-block;
       padding-right: 1.5rem; }
 
+/* Comments */
+.comment-content {
+  margin-bottom: 1.5rem; }
+  .comment-content a {
+    word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+.comments-area a {
+  text-decoration: none; }
+
+.comments-area h2, .comments-area h3 {
+  margin-bottom: 0; }
+
+.comments-area h3 {
+  font-size: 2rem; }
+
+.comments-area label {
+  display: block; }
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.children {
+  list-style: none; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem; }
+  .comment-body .comment-author-avatar {
+    margin-right: 1.5rem; }
+    .comment-body .comment-author-avatar img {
+      border-radius: 50%; }
+  .comment-body .comment-author {
+    font-weight: bold; }
+    .comment-body .comment-author cite {
+      font-style: normal; }
+  .comment-body .comment-metadata {
+    color: #808080; }
+
+li {
+  border-top: 1px solid #e1e1e1; }
+
+.comment-list li:first-child {
+  border-top: none; }
+
+.comment-list {
+  border-bottom: 1px solid #e1e1e1; }
+
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .comment-form textarea, .comment-form input {
+    width: 100%; }
+  .comment-form .comment-form-comment, .comment-form .comment-form-url {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .comment-form .comment-form-author, .comment-form .comment-form-email {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; }
+
 .adventure-container {
   display: grid;
   grid-gap: 20px 20px;
@@ -1095,10 +1162,9 @@ object {
   height: 50px;
   display: inline-block; }
   .site-branding .site-logo {
-    background: url(../../assets/images/logos/inhabitent-logo-tent.svg) center/50px no-repeat;
     width: 50px;
     height: 50px; }
-    .site-branding .site-logo a {
+    .site-branding .site-logo a, .site-branding .site-logo a img {
       display: block;
       width: 50px;
       height: 50px; }

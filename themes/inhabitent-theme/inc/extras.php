@@ -68,12 +68,20 @@ add_filter('get_the_archive_title', 'change_product_archive_title');
 // add read more button
 function insertReadMore($excerpt) {
 	if(!is_feed() && is_home()) {
-			// $content = get_the_excerpt();
 			$excerpt.= "<a href=";
 			$excerpt.= get_permalink();
 			$excerpt.= " class='btn inverse-btn read-more'>Read more</a>";
 			echo $excerpt;
 	}
-	return;// $content;
+	return;
 }
 add_filter ('the_excerpt', 'insertReadMore');
+
+/** change reply to comment link
+ * 
+ */
+function wpb_comment_reply_text( $link ) {
+	$link = str_replace( '→', '', $link );
+	return $link;
+	}
+	add_filter( 'comment_reply_link', 'wpb_comment_reply_text' );

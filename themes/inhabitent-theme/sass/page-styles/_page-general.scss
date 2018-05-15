@@ -7,9 +7,12 @@
 
 	.site-content {
 		width: 100vw;
-        margin-bottom: $base__space-unit * 2;
         margin-top: 50px;
 	}
+}
+
+main {
+    padding-bottom: $base__space-unit * 2;
 }
 
 .container {
