@@ -59,7 +59,10 @@ main {
 
 .hero-adventures {
     height: 130vh;
-    // background-size: 100%;
+}
+
+.page-header {
+    border-bottom: $border__dashed;
 }
 
 .entry-container {

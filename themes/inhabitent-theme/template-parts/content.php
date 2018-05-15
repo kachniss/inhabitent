@@ -24,5 +24,7 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<a href=" <?php the_permalink(); ?>" class="btn inverse-btn read-more">Read more</a>
+		
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

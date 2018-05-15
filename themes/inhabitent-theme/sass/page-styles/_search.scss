@@ -1,0 +1,43 @@
+/* Search page styles */
+.search-pagination {
+    border-top: $border__solid;
+    padding-top: $base__space-unit;
+
+    a, span {
+        text-decoration: none;
+        border: 0;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font__family-heading;
+        // font-size: .9rem;
+        padding: $base__space-unit/2;
+        background: $green-brand;
+        color: $color__text-light !important;
+        min-width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: .8rem;
+    }
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color__text-light !important;
+            background: darken($green-brand, 10);
+        }
+    }
+
+    span {
+        background: $medium-grey-brand;
+    }
+}
+
+.entry-title a {
+    text-decoration: none;
+}
+
+.entry-meta {
+    text-transform: uppercase;
+    font-family: $font__family-heading;
+}

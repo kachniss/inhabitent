@@ -773,6 +773,9 @@ main {
 .hero-adventures {
   height: 130vh; }
 
+.page-header {
+  border-bottom: 1px dashed #c8c8c8; }
+
 .entry-container {
   display: grid;
   grid-gap: 20px 20px;
@@ -908,21 +911,21 @@ main {
   padding-right: 0.75rem; }
 
 /* Post styles */
-.post {
+.journal .post {
   margin: 3rem 0; }
-  .post .entry-header {
+  .journal .post .entry-header {
     position: relative;
     width: 100%;
     min-height: 300px; }
-    .post .entry-header img {
+    .journal .post .entry-header img {
       width: 100%; }
-    .post .entry-header a {
+    .journal .post .entry-header a {
       display: inline;
       text-decoration: none;
       color: #fff; }
-      .post .entry-header a:hover {
+      .journal .post .entry-header a:hover {
         color: #e1e1e1; }
-    .post .entry-header .entry-title {
+    .journal .post .entry-header .entry-title {
       position: absolute;
       top: 0;
       left: 0;
@@ -931,7 +934,7 @@ main {
       color: #fff;
       padding: 0 1.5rem;
       font-size: 2rem; }
-    .post .entry-header .entry-meta {
+    .journal .post .entry-header .entry-meta {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -941,12 +944,12 @@ main {
       color: #fff;
       font-family: Novecento, sans-serif;
       padding: 0 1.5rem; }
-  .post .entry-footer {
+  .journal .post .entry-footer {
     font-family: Novecento, sans-serif;
     text-transform: uppercase; }
-    .post .entry-footer a {
+    .journal .post .entry-footer a {
       text-decoration: none; }
-    .post .entry-footer span {
+    .journal .post .entry-footer span {
       display: inline-block;
       padding-right: 1.5rem; }
 
@@ -995,7 +998,7 @@ main {
   .comment-body .comment-metadata {
     color: #808080; }
 
-li {
+.comment-list li {
   border-top: 1px solid #e1e1e1; }
 
 .comment-list li:first-child {
@@ -1072,6 +1075,37 @@ li {
   margin-top: 3rem; }
   .adventures .entry-container .adventure {
     min-height: 600px; }
+
+/* Search page styles */
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 1.5rem; }
+  .search-pagination a, .search-pagination span {
+    text-decoration: none;
+    border: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Novecento, sans-serif;
+    padding: 0.75rem;
+    background: #248A83;
+    color: #fff !important;
+    min-width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: .8rem; }
+  .search-pagination a:hover, .search-pagination a:focus, .search-pagination a:active {
+    color: #fff !important;
+    background: #19625d; }
+  .search-pagination span {
+    background: #808080; }
+
+.entry-title a {
+  text-decoration: none; }
+
+.entry-meta {
+  text-transform: uppercase;
+  font-family: Novecento, sans-serif; }
 
 /*--------------------------------------------------------------
 # Media
