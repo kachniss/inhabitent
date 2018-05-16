@@ -98,3 +98,8 @@ require get_template_directory() . '/inc/extras.php';
  * Enques
  */
  require get_template_directory() . '/inc/enqueues.php';
+
+ /**
+ * Sidebar
+ */
+require get_template_directory() . '/inc/sidebar.php';

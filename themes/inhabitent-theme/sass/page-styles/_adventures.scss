@@ -1,6 +1,5 @@
 .adventure-container  {
     display: grid;
-    grid-gap: 20px 20px;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: $base__space-unit * 2;

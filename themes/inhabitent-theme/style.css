@@ -818,6 +818,9 @@ main {
     font-family: Novecento, sans-serif;
     font-size: 1.2rem; }
 
+.day-of-the-week {
+  font-weight: bold; }
+
 /* Home page */
 .home_page .journal-entry-container {
   grid-template-columns: 1fr 1fr 1fr; }
@@ -1027,7 +1030,6 @@ main {
 
 .adventure-container {
   display: grid;
-  grid-gap: 20px 20px;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 3rem; }
@@ -1231,16 +1233,11 @@ object {
     width: 1120px;
     margin: auto;
     color: #fff; }
-    .site-footer .site-info h3 {
+    .site-footer .site-info .widget-title, .site-footer .site-info h3 {
       color: #d99054;
+      font-size: 1.2rem;
       letter-spacing: .1rem; }
-    .site-footer .site-info .footer-bold {
-      font-weight: bold; }
-    .site-footer .site-info .contact-info {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 250px;
-              flex: 0 0 250px; }
-    .site-footer .site-info .business-hours {
+    .site-footer .site-info .widget-area {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 250px;
               flex: 0 0 250px; }

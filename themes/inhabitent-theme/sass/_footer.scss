@@ -21,22 +21,16 @@
         margin: auto;
         color: $color__text-light;
 
-        h3 {
+        .widget-title, h3 {
             color: $color__heading-footer;
+            font-size: 1.2rem;
             letter-spacing: .1rem;
         }
+    
+        .widget-area {
+            flex: 0 0 250px;
+        }
 
-        .footer-bold {
-            font-weight: bold;
-        }
-    
-        .contact-info {
-            flex: 0 0 250px;
-        }
-    
-        .business-hours {
-            flex: 0 0 250px;
-        }
     
         .footer-logo {
             flex: 0 0 250px;
