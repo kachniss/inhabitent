@@ -1,12 +1,12 @@
 jQuery(document).ready(function($) {
 
+    var heroHeight = $('.hero-image').height();
+
     // add inverse header class to pages with hero image
-    if ($('div').hasClass('hero-image')) {
+    if ($('div').hasClass('hero-image') && $(window).scrollTop() <= heroHeight) {
         $('header').addClass('header-inverse');
     }
 
-    var heroHeight = $('.hero-image').height();
-    
     // remove inverse header class on scroll
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
@@ -24,6 +24,10 @@ jQuery(document).ready(function($) {
     $('.search-button').on('click', function() {
         $('.search-form').animate({'width': 'toggle'});
         $('.search-field').focus();
+    });
+
+    $('.search-form').on('focusout', function () {
+        $('.search-form').animate({'width': 'toggle'});
     });
 
     /** archive select redir

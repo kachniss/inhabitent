@@ -50,6 +50,7 @@
 
     .comment-author-avatar {
         margin-right: $base__space-unit;
+        min-width: 64px;
         img {
             border-radius: 50%;
         }
@@ -101,4 +102,24 @@
 
 .error {
     color: red;
+}
+
+article {
+    outline: 0;
+}
+
+.comment-form-cookies-consent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    input {
+        width: 25px;
+
+    }
+
+    label {
+        font-family: $font__family-default;
+        text-transform: none;
+    }
 }

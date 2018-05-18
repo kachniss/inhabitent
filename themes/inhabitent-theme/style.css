@@ -554,7 +554,8 @@ a {
     text-decoration: none; }
   .main-navigation .search-button {
     display: inline;
-    margin: 0 0.75rem; }
+    margin: 0 0.75rem;
+    cursor: pointer; }
   .main-navigation .search-form {
     display: none; }
     .main-navigation .search-form, .main-navigation .search-form fieldset, .main-navigation .search-form label {
@@ -1030,7 +1031,8 @@ main {
   display: flex;
   padding-top: 1.5rem; }
   .comment-body .comment-author-avatar {
-    margin-right: 1.5rem; }
+    margin-right: 1.5rem;
+    min-width: 64px; }
     .comment-body .comment-author-avatar img {
       border-radius: 50%; }
   .comment-body .comment-author {
@@ -1069,6 +1071,25 @@ main {
 
 .error {
   color: red; }
+
+article {
+  outline: 0; }
+
+.comment-form-cookies-consent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .comment-form-cookies-consent input {
+    width: 25px; }
+  .comment-form-cookies-consent label {
+    font-family: Merriweather, serif;
+    text-transform: none; }
 
 .adventure-container {
   display: grid;

@@ -99,7 +99,7 @@ function comment_validation_init() {
 
       comment: {
         required: true,
-        minlength: 20
+        minlength: 2
       }
     },
 
