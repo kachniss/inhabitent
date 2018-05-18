@@ -74,3 +74,50 @@ function add_serch_button ( $items ) {
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_serch_button');
+
+
+/** comment validation
+ * source https://wordpress.stackexchange.com/questions/7791/how-to-display-comment-form-error-messages-in-the-same-page?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa 05/17/2018
+ */
+function comment_validation_init() {
+    if(is_single() && comments_open() ) { ?>        
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+    $('#commentform').validate({
+
+    rules: {
+      author: {
+        required: true,
+        minlength: 2
+      },
+
+      email: {
+        required: true,
+        email: true
+      },
+
+      comment: {
+        required: true,
+        minlength: 20
+      }
+    },
+
+    messages: {
+      author: "Please fill your name.",
+      email: "Please enter a valid email address.",
+      comment: "Please write a comment."
+    },
+
+    errorElement: "div",
+    errorPlacement: function(error, element) {
+      element.after(error);
+    }
+
+    });
+    });
+    </script>
+    <?php
+    }
+    }
+    add_action('wp_footer', 'comment_validation_init');

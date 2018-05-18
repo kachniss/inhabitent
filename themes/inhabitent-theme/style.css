@@ -1067,6 +1067,9 @@ main {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%; }
 
+.error {
+  color: red; }
+
 .adventure-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
