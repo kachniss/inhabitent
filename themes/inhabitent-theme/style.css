@@ -512,7 +512,13 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block; }
+  display: block;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -546,6 +552,39 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .search-button {
+    display: inline;
+    margin: 0 0.75rem; }
+  .main-navigation .search-form {
+    display: none; }
+    .main-navigation .search-form, .main-navigation .search-form fieldset, .main-navigation .search-form label {
+      margin: 0;
+      padding: 0;
+      height: 1.75rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .main-navigation .search-form .search-field {
+      background: transparent;
+      text-transform: uppercase;
+      border: 0;
+      color: #404040;
+      font-family: Novecento, sans-serif; }
+      .main-navigation .search-form .search-field::-webkit-input-placeholder {
+        color: #a1a1a1; }
+      .main-navigation .search-form .search-field:-ms-input-placeholder {
+        color: #a1a1a1; }
+      .main-navigation .search-form .search-field::-ms-input-placeholder {
+        color: #a1a1a1; }
+      .main-navigation .search-form .search-field::placeholder {
+        color: #a1a1a1; }
+
+.menu-main-menu-container, .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1031,6 +1070,7 @@ main {
 .adventure-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px 20px;
   grid-template-rows: 1fr 1fr;
   margin-top: 3rem; }
   .adventure-container .adventure {
@@ -1198,12 +1238,24 @@ object {
   height: 50px;
   display: inline-block; }
   .site-branding .site-logo {
+    background: url(../../assets/images/logos/inhabitent-logo-tent.svg) center/50px no-repeat;
     width: 50px;
     height: 50px; }
-    .site-branding .site-logo a, .site-branding .site-logo a img {
+    .site-branding .site-logo a {
       display: block;
       width: 50px;
       height: 50px; }
+
+.header-inverse {
+  background: transparent;
+  border: 0;
+  position: absolute; }
+  .header-inverse .site-logo {
+    background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg); }
+  .header-inverse .search-field {
+    color: #fff !important; }
+  .header-inverse a {
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Footer

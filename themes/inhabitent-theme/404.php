@@ -59,7 +59,7 @@ get_header(); ?>
 					); ?>
 
 					<select class = "archive-select" >
-						<option value=""> Select Month </option>
+						<option value="" selected disabled> Select Month </option>
 						<?php wp_get_archives( $args ); ?>
 					</select>
 

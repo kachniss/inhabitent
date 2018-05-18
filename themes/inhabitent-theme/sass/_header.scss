@@ -25,13 +25,37 @@
 	display: inline-block;
 
 	.site-logo {
+		background: url(../../assets/images/logos/inhabitent-logo-tent.svg) center/50px no-repeat;
 		width: 50px;
         height: 50px;
         
-        a, a img {
+        a {
             display: block;
             width: 50px;
             height: 50px;
         }
 	}
+}
+
+.header-inverse {
+    background: transparent;
+    border: 0;
+    position: absolute;
+
+    .site-logo {
+        background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg);
+    }
+
+    .search-field {
+        color: $color__text-light !important;
+
+        &::placeholder {
+            // color: $color__text-light !important;
+        }
+    }
+
+    a {
+        color: $color__text-light;
+    }
+    
 }

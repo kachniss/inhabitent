@@ -65,14 +65,12 @@ function change_product_archive_title($title){
 }
 add_filter('get_the_archive_title', 'change_product_archive_title');
 
-// add read more button
-// function insertReadMore($excerpt) {
-// 	if(!is_feed() && is_home()) {
-// 			$excerpt.= "<a href=";
-// 			$excerpt.= get_permalink();
-// 			$excerpt.= " class='btn inverse-btn read-more'>Read more</a>";
-// 			echo $excerpt;
-// 	}
-// 	return;
-// }
-// add_filter ('the_excerpt', 'insertReadMore');
+/** add search
+ * source https://premium.wpmudev.org/blog/add-icons-wordpress-menus/ 05/17/2018
+ */
+
+function add_serch_button ( $items ) {
+        $items .= '<a class = "search-button"><span class = "fas fa-search "></span></a>';
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_serch_button');

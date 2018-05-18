@@ -29,6 +29,9 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
+	width: auto;
+	display: flex;
+	align-content: center;
 
 	ul {
 		display: none;
@@ -94,6 +97,40 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+
+	.search-button {
+		display: inline;
+		margin: 0 $base__space-unit / 2;
+	}
+	
+	.search-form {
+		display: none;
+
+		&, fieldset, label {
+			margin: 0;
+			padding: 0;
+			height: 1.75rem;
+			display: flex;
+		}
+
+		.search-field {
+			background: transparent;
+			text-transform: uppercase;
+			border: 0;
+			color: $color__text-main;
+			font-family: $font__family-heading;
+			
+
+			&::placeholder {
+				color: $light-grey-brand;
+			}
+		}
+	}
+}
+
+.menu-main-menu-container, .menu {
+	display: flex;
+	align-content: flex-end;
 }
 
 
