@@ -2,7 +2,8 @@
 # Header
 --------------------------------------------------------------*/
 .site-header {
-    width: 100vw;
+    width: 99.9vw;
+    max-width: 99.9vw;
     background: $color__background-header;
     border-bottom: $border__solid;
     z-index: 100;
@@ -48,10 +49,6 @@
 
     .search-field {
         color: $color__text-light !important;
-
-        &::placeholder {
-            // color: $color__text-light !important;
-        }
     }
 
     a {

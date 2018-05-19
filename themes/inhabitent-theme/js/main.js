@@ -19,15 +19,15 @@ jQuery(document).ready(function($) {
     });
 
     // expand search bar in navigation
-    $('.search-form').hide();
+    $('.main-navigation').find('.search-form').hide();
 
     $('.search-button').on('click', function() {
-        $('.search-form').animate({'width': 'toggle'});
-        $('.search-field').focus();
+        $('.main-navigation').find('.search-form').animate({'width': 'toggle'});
+        $('.main-navigation').find('.search-field').focus();
     });
 
-    $('.search-form').on('focusout', function () {
-        $('.search-form').animate({'width': 'toggle'});
+    $('.main-navigation').find('.search-form').on('focusout', function () {
+        $('.main-navigation').find('.search-form').animate({'width': 'toggle'});
     });
 
     /** archive select redir

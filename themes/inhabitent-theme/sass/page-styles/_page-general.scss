@@ -13,6 +13,7 @@
 
 main {
     padding-bottom: $base__space-unit * 2;
+    // max-width: 100vw;
 }
 
 .container {
@@ -33,7 +34,7 @@ main {
 .hero-image {
     margin-top: -50px;
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     min-width: $site__width;
     display: flex;
     justify-content: center;

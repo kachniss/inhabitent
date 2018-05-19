@@ -70,7 +70,7 @@ add_filter('get_the_archive_title', 'change_product_archive_title');
  */
 
 function add_serch_button ( $items ) {
-        $items .= '<a class = "search-button"><span class = "fas fa-search "></span></a>';
+        $items .= '<a class = "search-button"><span class = "fas fa-search"></span></a>';
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_serch_button');
