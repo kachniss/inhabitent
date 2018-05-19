@@ -100,7 +100,7 @@ a {
 
 	.search-button {
 		display: inline;
-		margin: 0 $base__space-unit / 2;
+		margin-left: $base__space-unit / 2;
 		cursor: pointer;
 	}
 	
@@ -115,6 +115,7 @@ a {
 		}
 
 		.search-field {
+			margin-left: $base__space-unit / 2;
 			background: transparent;
 			text-transform: uppercase;
 			border: 0;
@@ -122,8 +123,9 @@ a {
 			font-family: $font__family-heading;
 			
 
-			&::placeholder {
-				color: $light-grey-brand;
+			
+			.search-input::placeholder {
+				color: $medium-grey-brand;
 			}
 		}
 	}

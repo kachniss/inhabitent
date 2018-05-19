@@ -27,7 +27,9 @@ jQuery(document).ready(function($) {
     });
 
     $('.main-navigation').find('.search-form').on('focusout', function () {
-        $('.main-navigation').find('.search-form').animate({'width': 'toggle'});
+        if(!$(this).find('.search-field').val()) {
+            $('.main-navigation').find('.search-form').animate({'width': 'toggle'});
+        } 
     });
 
     /** archive select redir

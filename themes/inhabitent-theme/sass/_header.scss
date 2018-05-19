@@ -2,7 +2,7 @@
 # Header
 --------------------------------------------------------------*/
 .site-header {
-    width: 99vw;
+    width: 100%;
     background: $color__background-header;
     border-bottom: $border__solid;
     z-index: 100;
@@ -48,10 +48,24 @@
 
     .search-field {
         color: $color__text-light !important;
+
+        &::placeholder {
+            color: $yellow-brand;
+            opacity: 1; /* Firefox */
+        }
+
     }
 
     a {
         color: $color__text-light;
+        text-shadow: 1px 1px 2px $color__text-main;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $yellow-brand;
+        }
     }
+    
     
 }

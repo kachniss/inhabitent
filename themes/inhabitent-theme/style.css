@@ -1,13 +1,13 @@
 /*!
 Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Text Domain: inhabitent-theme
 Author: Kachniss
 Author URI:
 Description: A WordPress theme for Inhabitent website.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: inhabitent-theme
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -557,7 +557,7 @@ a {
     text-decoration: none; }
   .main-navigation .search-button {
     display: inline;
-    margin: 0 0.75rem;
+    margin-left: 0.75rem;
     cursor: pointer; }
   .main-navigation .search-form {
     display: none; }
@@ -569,19 +569,20 @@ a {
       display: -ms-flexbox;
       display: flex; }
     .main-navigation .search-form .search-field {
+      margin-left: 0.75rem;
       background: transparent;
       text-transform: uppercase;
       border: 0;
       color: #404040;
       font-family: Novecento, sans-serif; }
-      .main-navigation .search-form .search-field::-webkit-input-placeholder {
-        color: #a1a1a1; }
-      .main-navigation .search-form .search-field:-ms-input-placeholder {
-        color: #a1a1a1; }
-      .main-navigation .search-form .search-field::-ms-input-placeholder {
-        color: #a1a1a1; }
-      .main-navigation .search-form .search-field::placeholder {
-        color: #a1a1a1; }
+      .main-navigation .search-form .search-field .search-input::-webkit-input-placeholder {
+        color: #808080; }
+      .main-navigation .search-form .search-field .search-input:-ms-input-placeholder {
+        color: #808080; }
+      .main-navigation .search-form .search-field .search-input::-ms-input-placeholder {
+        color: #808080; }
+      .main-navigation .search-form .search-field .search-input::placeholder {
+        color: #808080; }
 
 .menu-main-menu-container, .menu {
   display: -webkit-box;
@@ -810,11 +811,11 @@ main {
 .hero-home {
   background-position: top; }
   .hero-home .main-logo img {
-    width: 250px;
-    height: 250px; }
+    width: 270px;
+    height: 270px; }
 
 .hero-adventures {
-  height: 130vh; }
+  height: 140vh; }
 
 .page-header {
   border-bottom: 1px dashed #c8c8c8; }
@@ -1239,7 +1240,7 @@ object {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  width: 99vw;
+  width: 100%;
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   z-index: 100;
@@ -1280,8 +1281,27 @@ object {
     background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg); }
   .header-inverse .search-field {
     color: #fff !important; }
+    .header-inverse .search-field::-webkit-input-placeholder {
+      color: #f0e4d1;
+      opacity: 1;
+      /* Firefox */ }
+    .header-inverse .search-field:-ms-input-placeholder {
+      color: #f0e4d1;
+      opacity: 1;
+      /* Firefox */ }
+    .header-inverse .search-field::-ms-input-placeholder {
+      color: #f0e4d1;
+      opacity: 1;
+      /* Firefox */ }
+    .header-inverse .search-field::placeholder {
+      color: #f0e4d1;
+      opacity: 1;
+      /* Firefox */ }
   .header-inverse a {
-    color: #fff; }
+    color: #fff;
+    text-shadow: 1px 1px 2px #404040; }
+    .header-inverse a:hover, .header-inverse a:focus, .header-inverse a:active {
+      color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Footer

@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="hero-image hero-adventures" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>)">
+                <div class="hero-image hero-adventures" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
                 </div>
 
                 <div class="single-page-content">
