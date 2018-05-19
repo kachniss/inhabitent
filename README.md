@@ -1,11 +1,11 @@
-# Project 4 Inhabitent Custom Template
+# Project 4 Inhabitent Wordpress site
 
 This is a project containing custom wordpress template and a custom plugin for a website of Inhabitent company.
 Custom plugin implements a widget for adding customizable Business Hours.
 
 Project 4 for RED Academy Web Development course 2018.
 
-[Inhabitent](https://kachniss.com/inhabitent/)
+URL: [Inhabitent](https://kachniss.com/inhabitent/)
 
 ## Author
 * Katerina Vopalkova
@@ -15,10 +15,13 @@ Project 4 for RED Academy Web Development course 2018.
 * RED Widget Boilerplate
 
 ## Technologies used
-* Wordpress
 * Gulp
 * Sass
 * jQuery
+* Wordpress 
+    * Custom Post Types
+    * Custom Taxonomies
+    * Custom Plugins
 * Third party Wordpress plugins:
     * Contact Form 7
     * Custom Field Suite

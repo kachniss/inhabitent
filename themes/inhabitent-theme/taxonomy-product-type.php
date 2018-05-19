@@ -2,7 +2,7 @@
 /**
  * The template for displaying product type taxonomy.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

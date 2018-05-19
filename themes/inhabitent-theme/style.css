@@ -1,6 +1,7 @@
 /*!
 Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
+Text Domain: inhabitent-theme
 Author: Kachniss
 Author URI:
 Description: A WordPress theme for Inhabitent website.
@@ -8,7 +9,6 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
-Text Domain: inhabitent-theme
 
 This theme, like WordPress, is licensed under the GPL.
 
@@ -1239,8 +1239,7 @@ object {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  width: 99.9vw;
-  max-width: 99.9vw;
+  width: 99vw;
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   z-index: 100;
