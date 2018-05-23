@@ -62,14 +62,6 @@ a {
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -83,19 +75,10 @@ a {
 		font-family: $font__family-heading;
 		text-transform: uppercase;
 		padding: 0 $base__space-unit/2;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
 	}
 
 	.search-button {
@@ -121,12 +104,6 @@ a {
 			border: 0;
 			color: $color__text-main;
 			font-family: $font__family-heading;
-			
-
-			
-			.search-input::placeholder {
-				color: $medium-grey-brand;
-			}
 		}
 	}
 }
@@ -135,7 +112,6 @@ a {
 	display: flex;
 	align-content: flex-end;
 }
-
 
 
 /* Small menu. */

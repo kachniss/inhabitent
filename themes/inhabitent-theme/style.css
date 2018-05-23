@@ -575,14 +575,6 @@ a {
       border: 0;
       color: #404040;
       font-family: Novecento, sans-serif; }
-      .main-navigation .search-form .search-field .search-input::-webkit-input-placeholder {
-        color: #808080; }
-      .main-navigation .search-form .search-field .search-input:-ms-input-placeholder {
-        color: #808080; }
-      .main-navigation .search-form .search-field .search-input::-ms-input-placeholder {
-        color: #808080; }
-      .main-navigation .search-form .search-field .search-input::placeholder {
-        color: #808080; }
 
 .menu-main-menu-container, .menu {
   display: -webkit-box;
@@ -722,7 +714,8 @@ a {
         align-self: flex-start; }
 
 .widget-title {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  letter-spacing: .1rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -770,9 +763,6 @@ aside {
     width: 100vw;
     margin-top: 50px; }
 
-main {
-  padding-bottom: 3rem; }
-
 .container {
   width: 1120px;
   margin: auto; }
@@ -782,10 +772,11 @@ main {
   display: -ms-flexbox;
   display: flex; }
   .content-page main {
-    -ms-flex-preferred-size: 784px;
-        flex-basis: 784px;
+    -ms-flex-preferred-size: 817.6px;
+        flex-basis: 817.6px;
     padding-right: 3rem;
-    border-right: 1px solid #e1e1e1; }
+    border-right: 1px solid #e1e1e1;
+    padding-bottom: 3rem; }
 
 .hero-image {
   margin-top: -50px;
@@ -864,6 +855,9 @@ main {
 
 .day-of-the-week {
   font-weight: bold; }
+
+iframe {
+  height: 300px; }
 
 /* Home page */
 .home-page .journal-entry-container {
@@ -1281,27 +1275,11 @@ object {
     background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg); }
   .header-inverse .search-field {
     color: #fff !important; }
-    .header-inverse .search-field::-webkit-input-placeholder {
-      color: #f0e4d1;
-      opacity: 1;
-      /* Firefox */ }
-    .header-inverse .search-field:-ms-input-placeholder {
-      color: #f0e4d1;
-      opacity: 1;
-      /* Firefox */ }
-    .header-inverse .search-field::-ms-input-placeholder {
-      color: #f0e4d1;
-      opacity: 1;
-      /* Firefox */ }
-    .header-inverse .search-field::placeholder {
-      color: #f0e4d1;
-      opacity: 1;
-      /* Firefox */ }
   .header-inverse a {
     color: #fff;
     text-shadow: 1px 1px 2px #404040; }
     .header-inverse a:hover, .header-inverse a:focus, .header-inverse a:active {
-      color: #f0e4d1; }
+      color: #f0e4d1 !important; }
 
 /*--------------------------------------------------------------
 # Footer

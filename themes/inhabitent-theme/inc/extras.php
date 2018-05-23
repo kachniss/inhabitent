@@ -53,7 +53,9 @@ add_filter( 'login_headertitle', 'change_login_logo_url_title' );
 */
 add_filter('max_srcset_image_width', create_function('', 'return 1;'));
 
-// change archive title
+/**
+ * change archive title
+*/
 function change_product_archive_title($title){
 	if (is_post_type_archive('products')) {
 		$title = "Shop stuff";
@@ -65,10 +67,10 @@ function change_product_archive_title($title){
 }
 add_filter('get_the_archive_title', 'change_product_archive_title');
 
-/** add search
+/**
+ * add search button to main menu
  * source https://premium.wpmudev.org/blog/add-icons-wordpress-menus/ 05/17/2018
  */
-
 function add_serch_button ( $items ) {
         $items .= '<a class = "search-button"><span class = "fas fa-search"></span></a>';
     return $items;
@@ -76,7 +78,8 @@ function add_serch_button ( $items ) {
 add_filter('wp_nav_menu_items', 'add_serch_button');
 
 
-/** comment validation
+/**
+ * comment validation
  * source https://wordpress.stackexchange.com/questions/7791/how-to-display-comment-form-error-messages-in-the-same-page?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa 05/17/2018
  */
 function comment_validation_init() {

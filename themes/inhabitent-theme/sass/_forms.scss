@@ -79,7 +79,6 @@ input[type="search"],
 textarea {
 	border: $border__solid;
 	font-family: $font__family-default;
-	// background: $light-grey-brand;
 	background: lighten($light-grey-brand, 30);
 	outline: 0;
 

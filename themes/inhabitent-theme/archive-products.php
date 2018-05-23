@@ -39,7 +39,7 @@ get_header(); ?>
                 ?>
                     <?php if ( $products->have_posts() ) : ?>
                         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
-                        <div class = "entry-post product-post">
+                        <div class = "entry-post">
                             <div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
                                 <a href= <?php the_permalink(); ?>></a>
                             </div>

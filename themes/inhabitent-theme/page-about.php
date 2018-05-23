@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(<?php the_post_thumbnail_url(); ?>)">
+				<div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(<?php echo CFS()->get('image'); ?>)">
 					<h1 class="hero-heading">
 						<?php the_title(); ?>
 					</h1>

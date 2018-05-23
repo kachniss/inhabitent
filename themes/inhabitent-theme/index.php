@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The main template file for displaying journal.
  *
  * @package Inhabitent_Theme
  */

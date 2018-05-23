@@ -7,6 +7,7 @@
         word-wrap: break-word;
     }
 }
+
 .bypostauthor {
 	display: block;
 }
@@ -46,6 +47,7 @@
     .comment-author-avatar {
         margin-right: $base__space-unit;
         min-width: 64px;
+
         img {
             border-radius: 50%;
         }
@@ -53,6 +55,7 @@
 
     .comment-author {
         font-weight: bold;
+
         cite {
             font-style: normal;
         }
@@ -74,7 +77,6 @@
 .comment-list{
     border-bottom: $border__solid;
 }
-
 
 .comment-form {
     display: flex;
