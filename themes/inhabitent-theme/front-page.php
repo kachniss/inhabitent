@@ -71,7 +71,7 @@ get_header(); ?>
                     ?>
                     <?php if ( $adventures->have_posts() ) : ?>
                         <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-                        <div class="adventure"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>)">
+                        <div class="adventure" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>)">
                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <a href="<?php the_permalink(); ?>" class="btn transparent-btn">Read more</a>
                         </div>
