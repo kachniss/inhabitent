@@ -12,6 +12,13 @@ function inhabitent_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'red_comments', get_template_directory_uri() . '/build/js/app.min.js', array( 'jquery' ), false, true );
+  	wp_localize_script( 'red_comments', 'red_vars', array(
+      'rest_url' => esc_url_raw( rest_url() ),
+      'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+      'post_id' => get_the_ID()
+  	) );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 

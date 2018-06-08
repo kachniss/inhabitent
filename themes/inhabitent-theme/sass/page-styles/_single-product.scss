@@ -32,6 +32,7 @@
 }
 
 .social-links {
+	padding-bottom: $base__space-unit * 2;
 	&:hover {
 		cursor: pointer;
 	}

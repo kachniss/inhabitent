@@ -484,7 +484,7 @@ label {
   text-transform: uppercase; }
 
 .required {
-  color: red; }
+  color: #d99054; }
 
 .wpcf7-not-valid-tip {
   text-transform: none;
@@ -944,12 +944,13 @@ iframe {
     font-size: 2rem;
     margin-top: 0; }
 
-.social-links:hover {
-  cursor: pointer; }
-
-.social-links span {
-  display: inline-block;
-  padding-right: 0.75rem; }
+.social-links {
+  padding-bottom: 3rem; }
+  .social-links:hover {
+    cursor: pointer; }
+  .social-links span {
+    display: inline-block;
+    padding-right: 0.75rem; }
 
 /* Post styles */
 .journal .post {

@@ -1,5 +1,7 @@
 # Project 4 Inhabitent Wordpress site
 
+![Inhabitent Screenshot](themes/inhabitent-theme/screenshot.png "This is a screenshot of the Inhabitent theme")
+
 This is a project containing custom wordpress template and a custom plugin for a website of Inhabitent company.
 Custom plugin implements a widget for adding customizable Business Hours.
 
